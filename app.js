@@ -69,9 +69,9 @@ function renderIncomeList(filter="") {
         if (!filter || item.category.toLowerCase().includes(filter) || (item.note && item.note.toLowerCase().includes(filter))) {
             const li = document.createElement('li');
             li.innerHTML = `₹${item.amount} | ${item.category} | ${item.date} | ${item.note||''} 
-      <button onclick="editEntry('income', ${idx})">Edit</button>
-      <button onclick="deleteEntry('income', ${idx})">Delete</button>`;
-            list.appendChild(li);
+  <button onclick="editEntry('income', ${item.originalIndex})">Edit</button>
+  <button onclick="deleteEntry('income', ${item.originalIndex})">Delete</button>`;
+list.appendChild(li);
         }
     });
 }
