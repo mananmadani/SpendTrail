@@ -89,10 +89,10 @@ function renderExpenseList(filter="") {
   .forEach((item, idx) => {
         if (!filter || item.category.toLowerCase().includes(filter) || (item.note && item.note.toLowerCase().includes(filter))) {
             const li = document.createElement('li');
-            li.innerHTML = `₹${item.amount} | ${item.category} | ${item.date} | ${item.note||''}
-      <button onclick="editEntry('expenses', ${idx})">Edit</button>
-      <button onclick="deleteEntry('expenses', ${idx})">Delete</button>`;
-            list.appendChild(li);
+            li.innerHTML = `₹${item.amount} | ${item.category} | ${item.date} | ${item.note||''} 
+  <button onclick="editEntry('expenses', ${item.originalIndex})">Edit</button>
+  <button onclick="deleteEntry('expenses', ${item.originalIndex})">Delete</button>`;
+list.appendChild(li);
         }
     });
 }
