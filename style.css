@@ -85,3 +85,7 @@ button:hover { background: #00b6a8; color: #fff;}
   color: #fff;
   box-shadow: 0 4px 18px #00bfa634;
 }
+#side-menu {
+  max-height: 90vh;
+  overflow-y: auto;
+}
