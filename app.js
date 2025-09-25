@@ -35,13 +35,7 @@ function updateSummary() {
 function renderRecentList() {
     const data = getData();
     let all = data.income.map(e => ({...e, type: 'Income'})).concat(data.expenses.map(e => ({...e, type: 'Expense'})));
-    all = all
-  .map((item, idx) => ({ ...item, originalIndex: idx }))
-  .sort((a, b) => {
-    const dateComp = b.date.localeCompare(a.date);
-    if (dateComp !== 0) return dateComp;
-    return b.originalIndex - a.originalIndex;
-  });
+    all.sort((a, b) => new Date(b.date) - new Date(a.date));
     const shown = all.slice(0, 5);
     const list = document.getElementById('recent-list');
     list.innerHTML = '';
