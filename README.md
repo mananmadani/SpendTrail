@@ -24,7 +24,7 @@
 ## 🚀 Quick Start
 
 ### Try it Now
-Visit the live demo: [SpendTrail App](https://mananmadani.github.io/SpendTrail/)
+Visit the App now: [SpendTrail App](https://mananmadani.github.io/SpendTrail/)
 
 ### Install as App
 
