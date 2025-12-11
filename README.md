@@ -69,6 +69,7 @@ cd SpendTrail
 python -m http.server 8000
 
 # Then visit http://localhost:8000
+
 📁 Project Structure
 SpendTrail/
 ├── index.html           # Main HTML file
@@ -78,6 +79,7 @@ SpendTrail/
 ├── service-worker.js   # Service worker for offline support
 ├── SpendTrail.png      # App icon
 └── README.md           # Documentation
+
 🔒 Privacy & Security
 Your data, your control:
 ✅ All data stored locally on your device
@@ -86,6 +88,7 @@ Your data, your control:
 ✅ No account registration required
 ✅ Works completely offline
 ✅ Optional encrypted backups with your password
+
 💡 Usage
 Adding Transactions
 Click the Add tab
@@ -107,6 +110,7 @@ Go to More tab
 Choose "Backup Data" (simple JSON) or "Encrypted Backup" (password-protected)
 Save the file securely
 Restore anytime using "Restore Data"
+
 🤝 Contributing
 Contributions, issues, and feature requests are welcome!
 Fork the project
@@ -114,6 +118,7 @@ Create your feature branch (git checkout -b feature/AmazingFeature)
 Commit your changes (git commit -m 'Add some AmazingFeature')
 Push to the branch (git push origin feature/AmazingFeature)
 Open a Pull Request
+
 📝 Changelog
 v3.5 (Current)
 ✅ Added income analytics with charts
@@ -124,13 +129,16 @@ v3.5 (Current)
 ✅ Enhanced privacy policy
 v3.4
 Initial public release
+
 📄 License
 This project is licensed under the MIT License - see the LICENSE file for details.
+
 👨‍💻 Author
 Manan Madani
 GitHub: @mananmadani
 Project Link: SpendTrail
 ⭐ Show Your Support
 Give a ⭐️ if this project helped you!
+
 📬 Contact
 Have questions or suggestions? Feel free to open an issue!
