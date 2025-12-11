@@ -124,8 +124,6 @@ v3.5 (Current)
 ✅ Added income analytics with charts
 ✅ Fixed entry sorting in custom statements
 ✅ Added empty state displays in ledger
-✅ Improved auto-update system for PWA
-✅ Added input validation (no negative/zero amounts)
 ✅ Enhanced privacy policy
 v3.4
 Initial public release
