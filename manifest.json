@@ -1,7 +1,7 @@
 {
   "name": "SpendTrail",
   "short_name": "SpendTrail",
-  "version": "3.5",
+  "version": "3.6",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#FAFAFA",
