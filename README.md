@@ -3,7 +3,7 @@
 > A modern, privacy-focused expense and income tracker built as a Progressive Web App (PWA)
 
 [![Live Demo](https://img.shields.io/badge/Demo-Live-success)](https://mananmadani.github.io/SpendTrail/)
-[![Version](https://img.shields.io/badge/version-3.5-blue)]()
+[![Version](https://img.shields.io/badge/version-3.6-blue)]()
 [![License](https://img.shields.io/badge/license-MIT-green)]()
 
 ## ✨ Features
@@ -20,6 +20,7 @@
 - 🌙 **PWA Support** - Install as app on any device
 - 📱 **Fully Responsive** - Works perfectly on mobile, tablet, and desktop
 - ⚡ **Offline Support** - Works without internet connection
+- ⏰ **Smart Sorting** - Transactions sorted by date first, then time
 
 ## 🚀 Quick Start
 
@@ -69,7 +70,6 @@ cd SpendTrail
 python -m http.server 8000
 
 # Then visit http://localhost:8000
-
 📁 Project Structure
 SpendTrail/
 ├── index.html           # Main HTML file
@@ -77,9 +77,10 @@ SpendTrail/
 ├── style.css           # Styles and themes
 ├── manifest.json       # PWA manifest
 ├── service-worker.js   # Service worker for offline support
-├── SpendTrail.png      # App icon
-└── README.md           # Documentation
-
+├── SpendTrail.png      # App icon (1024x1024)
+├── README.md           # Documentation
+├── LICENSE             # MIT License
+└── .gitignore          # Git ignore rules
 🔒 Privacy & Security
 Your data, your control:
 ✅ All data stored locally on your device
@@ -88,7 +89,6 @@ Your data, your control:
 ✅ No account registration required
 ✅ Works completely offline
 ✅ Optional encrypted backups with your password
-
 💡 Usage
 Adding Transactions
 Click the Add tab
@@ -110,7 +110,10 @@ Go to More tab
 Choose "Backup Data" (simple JSON) or "Encrypted Backup" (password-protected)
 Save the file securely
 Restore anytime using "Restore Data"
-
+Long Press to Edit/Delete
+Long press any transaction to open the context menu
+Choose Edit to modify or Delete to remove
+Works on both mobile and desktop
 🤝 Contributing
 Contributions, issues, and feature requests are welcome!
 Fork the project
@@ -118,25 +121,26 @@ Create your feature branch (git checkout -b feature/AmazingFeature)
 Commit your changes (git commit -m 'Add some AmazingFeature')
 Push to the branch (git push origin feature/AmazingFeature)
 Open a Pull Request
-
 📝 Changelog
-v3.5 (Current)
+v3.6 (Current)
+✅ Fixed: Transaction sorting now properly sorts by date first, then by time
+✅ Fixed: Old entries now appear in correct chronological position
+✅ Fixed: Export PDF and statements now use proper date-based sorting
+✅ Improved: Consistent sorting across all views (Home, All Entries, Ledger, Statements)
+v3.5
 ✅ Added income analytics with charts
 ✅ Fixed entry sorting in custom statements
 ✅ Added empty state displays in ledger
 ✅ Enhanced privacy policy
 v3.4
-Initial public release
-
+✅ Initial public release
 📄 License
 This project is licensed under the MIT License - see the LICENSE file for details.
-
 👨‍💻 Author
 Manan Madani
 GitHub: @mananmadani
 Project Link: SpendTrail
 ⭐ Show Your Support
 Give a ⭐️ if this project helped you!
-
 📬 Contact
 Have questions or suggestions? Feel free to open an issue!
