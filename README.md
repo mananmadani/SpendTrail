@@ -100,6 +100,7 @@ cd SpendTrail
 python -m http.server 8000
 
 # Visit http://localhost:8000
+
 📁 Project Structure
 SpendTrail/
 ├── index.html           # Main HTML file
@@ -111,6 +112,7 @@ SpendTrail/
 ├── README.md           # Documentation
 ├── LICENSE             # MIT License
 └── .gitignore          # Git ignore rules
+
 📚 Usage Guide
 Adding Transactions
 Click the Add tab in the bottom navigation
@@ -126,46 +128,65 @@ Go to Insights → Analytics
 Filter by time period (Week / Month / 3 Months)
 Toggle between Income and Expense analytics
 View:
+
 🥧 Pie Chart - Category breakdown with percentages
+
 📊 Bar Chart - All categories sorted by amount
+
 📈 Trend Chart - Daily income vs expense trends
+
 Generating Custom Statements
 Go to Insights → Custom Statement
 Select Start Date and End Date
 Click "Generate" to view transactions
 Click "Export PDF" to download a professional report
+
 Managing Your Data
+
 Backup Options
+
 Simple Backup: Go to More → Backup Data (JSON format, human-readable)
+
 Encrypted Backup: Go to More → Encrypted Backup (AES-256 encrypted, password-protected)
+
 Restore Data
 Go to More → Restore Data
 Select your backup file (.json or .encrypted)
 Enter password (if encrypted)
 Confirm restoration
 Export Full Report
+
 Go to More → Export PDF for a complete financial report
+
 Edit or Delete Transactions
+
 Long press (or click and hold) any transaction
 A context menu will appear with options:
+
 ✏️ Edit - Modify the transaction
+
 🗑️ Delete - Remove the transaction
 Cancel - Close the menu
+
 🎨 PDF Report Features
 SpendTrail generates professional PDF reports with:
+
 📊 Color-coded Summary Cards
 Green card for total income
 Red card for total expenses
 Blue card for balance
+
 📋 Clean Table Layout
 Column headers (Date, Category, Note, Amount)
 Alternating row backgrounds for readability
 Green text for income, red for expense
+
 📄 Professional Formatting
 Automatic pagination with page numbers
 Headers repeated on each page
 Branded header with app logo
 Indian date format (e.g., "14 Dec 2025")
+
 🔒 Privacy & Security
 Data Storage
 ✅ 100% Local Storage - All data stored in your browser's localStorage
@@ -173,13 +194,20 @@ Data Storage
 ✅ No Tracking - Zero analytics, cookies, or trackers
 ✅ No Registration - No accounts, emails, or personal info required
 Encryption
+
 🔐 AES-256 Encryption - Military-grade encryption for backups
+
 🔑 Your Password Only - Only you know the password
+
 ⚠️ Password Recovery - Not possible (by design for security)
 Data Control
+
 📥 Export Anytime - Download your data in JSON or PDF
+
 🗑️ Delete Anytime - Permanently delete all data
+
 💾 Backup Control - Create backups whenever you want
+
 🤝 Contributing
 Contributions, issues, and feature requests are welcome! Feel free to check the issues page.
 How to Contribute
@@ -196,8 +224,10 @@ Write clean, readable code
 Follow existing code style
 Test on multiple browsers
 Update documentation if needed
+
 📝 Changelog
 v3.6 (Current - December 2025)
+
 🐛 Bug Fixes
 Fixed transaction sorting to prioritize date over timestamp
 Old entries now appear in correct chronological position
@@ -205,7 +235,6 @@ Export PDF now uses proper date-based sorting
 ✨ Improvements
 Professional PDF exports with colored tables and summary cards
 Custom statement PDFs with period-specific summaries
-Consistent sorting across all views (Home, All Entries, Ledger, Statements)
 Better PDF layout with headers, footers, and page numbers
 Improved date formatting in PDFs (Indian format)
 v3.5 (November 2025)
@@ -218,17 +247,7 @@ Initial public release
 Basic income/expense tracking
 Simple analytics
 PDF export functionality
-🐛 Known Issues
-Comma formatting for large numbers is under development
-Browser localStorage limit is ~5-10MB (sufficient for thousands of transactions)
-🗺️ Roadmap
-[ ] Recurring transactions
-[ ] Budget goals and alerts
-[ ] Multi-currency support
-[ ] Dark mode
-[ ] Data sync via Google Drive (optional)
-[ ] Category icons
-[ ] Transaction attachments (receipt photos)
+
 📄 License
 This project is licensed under the MIT License - see the LICENSE file for details.
 What does this mean?
@@ -236,11 +255,16 @@ What does this mean?
 ✅ Free to modify and distribute
 ✅ No warranty provided
 ❌ Author not liable for any damages
+
 👨‍💻 Author
 Manan Madani
+
 🐙 GitHub: @mananmadani
+
 📧 Email: Open an issue for contact
+
 🌐 Project: SpendTrail
+
 ⭐ Show Your Support
 If SpendTrail helped you manage your finances better, please consider:
 ⭐ Starring the repository
