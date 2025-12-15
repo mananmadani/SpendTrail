@@ -104,8 +104,8 @@ python -m http.server 8000
 📁 Project Structure
 SpendTrail/
 ├── index.html           # Main HTML file
-├── app.js              # Core application logic (~600 lines)
-├── style.css           # Styles and themes (~800 lines)
+├── app.js              # Core application logic
+├── style.css           # Styles and themes 
 ├── manifest.json       # PWA manifest
 ├── service-worker.js   # Service worker for offline support
 ├── SpendTrail.png      # App icon (1024x1024)
@@ -114,6 +114,7 @@ SpendTrail/
 └── .gitignore          # Git ignore rules
 
 📚 Usage Guide
+
 Adding Transactions
 Click the Add tab in the bottom navigation
 Toggle between Income or Expense
@@ -123,7 +124,9 @@ Category (e.g., Food, Salary, Rent)
 Date (defaults to today)
 Note (optional)
 Click "Add Income" or "Add Expense"
+
 Viewing Analytics
+
 Go to Insights → Analytics
 Filter by time period (Week / Month / 3 Months)
 Toggle between Income and Expense analytics
@@ -232,16 +235,19 @@ v3.6 (Current - December 2025)
 Fixed transaction sorting to prioritize date over timestamp
 Old entries now appear in correct chronological position
 Export PDF now uses proper date-based sorting
+
 ✨ Improvements
 Professional PDF exports with colored tables and summary cards
 Custom statement PDFs with period-specific summaries
 Better PDF layout with headers, footers, and page numbers
 Improved date formatting in PDFs (Indian format)
+
 v3.5 (November 2025)
 Added income analytics with charts
 Fixed entry sorting in custom statements
 Added empty state displays in ledger
 Enhanced privacy policy
+
 v3.4 (October 2025)
 Initial public release
 Basic income/expense tracking
