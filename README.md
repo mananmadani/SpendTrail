@@ -24,8 +24,6 @@ SpendTrail is a lightweight, privacy-first expense tracker that runs entirely in
 - 📅 **Custom Statements** - Generate reports for any date range
 - 📄 **Professional PDF Export** - Beautiful, color-coded reports with tables and summaries
 - 💾 **Backup & Restore** - Simple JSON or AES-256 encrypted backups
-- ⏰ **Smart Sorting** - Chronological sorting by date, then time
-- 🎯 **Long Press Actions** - Edit or delete entries with long press (mobile & desktop)
 
 ### Technical Highlights
 - 🔒 **Privacy First** - All data stored locally using localStorage
