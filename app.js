@@ -179,6 +179,14 @@ function openOverlay(title, content) {
 }
 
 function closeOverlay() {
+  // Check if we're in a category view within ledger
+  if (currentOverlayContext && currentOverlayContext.type === 'category') {
+    // Go back to ledger instead of closing overlay completely
+    showLedger();
+    if (window.navigator.vibrate) window.navigator.vibrate(10);
+    return;
+  }
+  
   // Normal close - always close the overlay
   document.getElementById('overlay').classList.remove('active');
   currentOverlayContext = null;
