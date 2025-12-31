@@ -3,9 +3,10 @@
 > A modern, privacy-focused expense and income tracker built as a Progressive Web App (PWA)
 
 [![Live Demo](https://img.shields.io/badge/Demo-Live-success)](https://mananmadani.github.io/SpendTrail/)
-[![Version](https://img.shields.io/badge/version-3.6-blue)]()
-[![License](https://img.shields.io/badge/license-MIT-green)]()
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)]()
+[![Version](https://img.shields.io/badge/version-3.7-blue)](https://github.com/mananmadani/SpendTrail)
+[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+[![Android APK](https://img.shields.io/badge/Android-APK-green)](https://github.com/mananmadani/SpendTrail/releases/latest)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/mananmadani/SpendTrail/pulls)
 
 ## 📖 About
 
@@ -35,9 +36,28 @@ SpendTrail is a lightweight, privacy-first expense tracker that runs entirely in
 ## 🚀 Quick Start
 
 ### 🌐 Try Online
-**No installation required!** Visit: [SpendTrail App](https://mananmadani.github.io/SpendTrail/)
+**No installation required!** Visit: **[SpendTrail Web App](https://mananmadani.github.io/SpendTrail/)**
 
-### 📱 Install as App
+### 📱 Download Android App
+
+📱 **[Download SpendTrail APK v3.7](https://github.com/mananmadani/SpendTrail/releases/latest)**
+
+Get the native Android app for the best offline experience!
+
+**How to Install:**
+1. Download the APK file from the link above
+2. Open the downloaded file on your Android phone
+3. Allow installation from unknown sources if prompted
+4. Install and enjoy SpendTrail!
+
+**Why Android App?**
+- ✅ True offline support
+- ✅ Faster performance  
+- ✅ Native Android experience
+- ✅ No browser needed
+- ✅ Installs like a regular app
+
+### 📲 Install as PWA (Web App)
 
 <details>
 <summary><b>Android / Chrome</b></summary>
@@ -100,8 +120,11 @@ cd SpendTrail
 python -m http.server 8000
 
 # Visit http://localhost:8000
+```
 
-📁 Project Structure
+## 📁 Project Structure
+
+```
 SpendTrail/
 ├── index.html           # Main HTML file
 ├── app.js              # Core application logic
@@ -112,173 +135,212 @@ SpendTrail/
 ├── README.md           # Documentation
 ├── LICENSE             # MIT License
 └── .gitignore          # Git ignore rules
+```
 
-📚 Usage Guide
+## 📚 Usage Guide
 
-Adding Transactions
-Click the Add tab in the bottom navigation
-Toggle between Income or Expense
-Enter:
-Amount (e.g., 500.00)
-Category (e.g., Food, Salary, Rent)
-Date (defaults to today)
-Note (optional)
-Click "Add Income" or "Add Expense"
+### Adding Transactions
 
-Viewing Analytics
+1. Click the **Add** tab in the bottom navigation
+2. Toggle between **Income** or **Expense**
+3. Enter:
+   - **Amount** (e.g., 500.00)
+   - **Category** (e.g., Food, Salary, Rent)
+   - **Date** (defaults to today)
+   - **Note** (optional)
+4. Click **"Add Income"** or **"Add Expense"**
 
-Go to Insights → Analytics
-Filter by time period (Week / Month / 3 Months)
-Toggle between Income and Expense analytics
-View:
+### Viewing Analytics
 
-🥧 Pie Chart - Category breakdown with percentages
+1. Go to **Insights → Analytics**
+2. Filter by time period (**Week** / **Month** / **3 Months**)
+3. Toggle between **Income** and **Expense** analytics
+4. View:
+   - 🥧 **Pie Chart** - Category breakdown with percentages
+   - 📊 **Bar Chart** - All categories sorted by amount
+   - 📈 **Trend Chart** - Daily income vs expense trends
 
-📊 Bar Chart - All categories sorted by amount
+### Generating Custom Statements
 
-📈 Trend Chart - Daily income vs expense trends
+1. Go to **Insights → Custom Statement**
+2. Select **Start Date** and **End Date**
+3. Click **"Generate"** to view transactions
+4. Click **"Export PDF"** to download a professional report
 
-Generating Custom Statements
-Go to Insights → Custom Statement
-Select Start Date and End Date
-Click "Generate" to view transactions
-Click "Export PDF" to download a professional report
+### Managing Your Data
 
-Managing Your Data
+**Backup Options:**
 
-Backup Options
+- **Simple Backup**: Go to **More → Backup Data** (JSON format, human-readable)
+- **Encrypted Backup**: Go to **More → Encrypted Backup** (AES-256 encrypted, password-protected)
 
-Simple Backup: Go to More → Backup Data (JSON format, human-readable)
+**Restore Data:**
 
-Encrypted Backup: Go to More → Encrypted Backup (AES-256 encrypted, password-protected)
+1. Go to **More → Restore Data**
+2. Select your backup file (`.json` or `.encrypted`)
+3. Enter password (if encrypted)
+4. Confirm restoration
 
-Restore Data
-Go to More → Restore Data
-Select your backup file (.json or .encrypted)
-Enter password (if encrypted)
-Confirm restoration
-Export Full Report
+**Export Full Report:**
 
-Go to More → Export PDF for a complete financial report
+- Go to **More → Export PDF** for a complete financial report
 
-Edit or Delete Transactions
+### Edit or Delete Transactions
 
-Long press (or click and hold) any transaction
-A context menu will appear with options:
+1. **Long press** (or click and hold) any transaction
+2. A context menu will appear with options:
+   - ✏️ **Edit** - Modify the transaction
+   - 🗑️ **Delete** - Remove the transaction
+   - **Cancel** - Close the menu
 
-✏️ Edit - Modify the transaction
+## 🎨 PDF Report Features
 
-🗑️ Delete - Remove the transaction
-Cancel - Close the menu
-
-🎨 PDF Report Features
 SpendTrail generates professional PDF reports with:
 
-📊 Color-coded Summary Cards
-Green card for total income
-Red card for total expenses
-Blue card for balance
+📊 **Color-coded Summary Cards**
+- Green card for total income
+- Red card for total expenses
+- Blue card for balance
 
-📋 Clean Table Layout
-Column headers (Date, Category, Note, Amount)
-Alternating row backgrounds for readability
-Green text for income, red for expense
+📋 **Clean Table Layout**
+- Column headers (Date, Category, Note, Amount)
+- Alternating row backgrounds for readability
+- Green text for income, red for expense
 
-📄 Professional Formatting
-Automatic pagination with page numbers
-Headers repeated on each page
-Branded header with app logo
-Indian date format (e.g., "14 Dec 2025")
+📄 **Professional Formatting**
+- Automatic pagination with page numbers
+- Headers repeated on each page
+- Branded header with app logo
+- Indian date format (e.g., "14 Dec 2025")
 
-🔒 Privacy & Security
-Data Storage
-✅ 100% Local Storage - All data stored in your browser's localStorage
-✅ No Cloud Sync - Data never leaves your device
-✅ No Tracking - Zero analytics, cookies, or trackers
-✅ No Registration - No accounts, emails, or personal info required
-Encryption
+## 🔒 Privacy & Security
 
-🔐 AES-256 Encryption - Military-grade encryption for backups
+### Data Storage
 
-🔑 Your Password Only - Only you know the password
+✅ **100% Local Storage** - All data stored in your browser's localStorage  
+✅ **No Cloud Sync** - Data never leaves your device  
+✅ **No Tracking** - Zero analytics, cookies, or trackers  
+✅ **No Registration** - No accounts, emails, or personal info required  
 
-⚠️ Password Recovery - Not possible (by design for security)
-Data Control
+### Encryption
 
-📥 Export Anytime - Download your data in JSON or PDF
+🔐 **AES-256 Encryption** - Military-grade encryption for backups  
+🔑 **Your Password Only** - Only you know the password  
+⚠️ **Password Recovery** - Not possible (by design for security)  
 
-🗑️ Delete Anytime - Permanently delete all data
+### Data Control
 
-💾 Backup Control - Create backups whenever you want
+📥 **Export Anytime** - Download your data in JSON or PDF  
+🗑️ **Delete Anytime** - Permanently delete all data  
+💾 **Backup Control** - Create backups whenever you want  
 
-🤝 Contributing
-Contributions, issues, and feature requests are welcome! Feel free to check the issues page.
-How to Contribute
-Fork the project
-Create your feature branch
-git checkout -b feature/AmazingFeature
-Commit your changes
-git commit -m 'Add some AmazingFeature'
-Push to the branch
-git push origin feature/AmazingFeature
-Open a Pull Request
-Development Guidelines
-Write clean, readable code
-Follow existing code style
-Test on multiple browsers
-Update documentation if needed
+## 🤝 Contributing
 
-📝 Changelog
-v3.6 (Current - December 2025)
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/mananmadani/SpendTrail/issues).
 
-🐛 Bug Fixes
-Fixed transaction sorting to prioritize date over timestamp
-Old entries now appear in correct chronological position
-Export PDF now uses proper date-based sorting
+### How to Contribute
 
-✨ Improvements
-Professional PDF exports with colored tables and summary cards
-Custom statement PDFs with period-specific summaries
-Better PDF layout with headers, footers, and page numbers
-Improved date formatting in PDFs (Indian format)
+1. Fork the project
+2. Create your feature branch
+   ```bash
+   git checkout -b feature/AmazingFeature
+   ```
+3. Commit your changes
+   ```bash
+   git commit -m 'Add some AmazingFeature'
+   ```
+4. Push to the branch
+   ```bash
+   git push origin feature/AmazingFeature
+   ```
+5. Open a Pull Request
 
-v3.5 (November 2025)
-Added income analytics with charts
-Fixed entry sorting in custom statements
-Added empty state displays in ledger
-Enhanced privacy policy
+### Development Guidelines
 
-v3.4 (October 2025)
-Initial public release
-Basic income/expense tracking
-Simple analytics
-PDF export functionality
+- Write clean, readable code
+- Follow existing code style
+- Test on multiple browsers
+- Update documentation if needed
 
-📄 License
-This project is licensed under the MIT License - see the LICENSE file for details.
-What does this mean?
-✅ Free to use for personal and commercial projects
-✅ Free to modify and distribute
-✅ No warranty provided
-❌ Author not liable for any damages
+## 📝 Changelog
 
-👨‍💻 Author
-Manan Madani
+### v3.7 (Current - December 2025)
 
-🐙 GitHub: @mananmadani
+🐛 **Bug Fixes**
+- Enhanced app performance and reliability
 
-📧 Email: Open an issue for contact
+✨ **Improvements**
+- Minor UI refinements for better user experience
+- Optimized app loading times
+- Improved error handling
 
-🌐 Project: SpendTrail
+### v3.6 (December 2025)
 
-⭐ Show Your Support
+✅ **New Features**
+- Enhanced privacy features
+
+🐛 **Bug Fixes**
+- Fixed transaction sorting to prioritize date over timestamp
+- Old entries now appear in correct chronological position
+- Export PDF now uses proper date-based sorting
+
+✨ **Improvements**
+- Professional PDF exports with colored tables and summary cards
+- Custom statement PDFs with period-specific summaries
+- Better PDF layout with headers, footers, and page numbers
+- Improved date formatting in PDFs (Indian format)
+
+### v3.5 (November 2025)
+
+- Added income analytics with charts
+- Fixed entry sorting in custom statements
+- Added empty state displays in ledger
+- Enhanced privacy policy
+
+### v3.4 (October 2025)
+
+- Initial public release
+- Basic income/expense tracking
+- Simple analytics
+- PDF export functionality
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+**What does this mean?**
+
+✅ Free to use for personal and commercial projects  
+✅ Free to modify and distribute  
+✅ No warranty provided  
+❌ Author not liable for any damages  
+
+## 👨‍💻 Author
+
+**Manan Madani**
+
+- 🐙 GitHub: [@mananmadani](https://github.com/mananmadani)
+- 📧 Email: Open an [issue](https://github.com/mananmadani/SpendTrail/issues) for contact
+- 🌐 Project: [SpendTrail](https://github.com/mananmadani/SpendTrail)
+
+## ⭐ Show Your Support
+
 If SpendTrail helped you manage your finances better, please consider:
-⭐ Starring the repository
-🐛 Reporting bugs or issues
-💡 Suggesting new features
-🔀 Contributing code improvements
-📢 Sharing with friends and family
-📬 Support & Feedback
-🐛 Bug Reports: Open an issue
-💡 Feature Requests: Open an issue
-❓ Questions: Discussions
+
+- ⭐ Starring the repository
+- 🐛 Reporting bugs or issues
+- 💡 Suggesting new features
+- 🔀 Contributing code improvements
+- 📢 Sharing with friends and family
+
+## 📬 Support & Feedback
+
+- 🐛 **Bug Reports**: [Open an issue](https://github.com/mananmadani/SpendTrail/issues)
+- 💡 **Feature Requests**: [Open an issue](https://github.com/mananmadani/SpendTrail/issues)
+- ❓ **Questions**: [Discussions](https://github.com/mananmadani/SpendTrail/discussions)
+- 🌐 **Try the App**: [SpendTrail Web App](https://mananmadani.github.io/SpendTrail/)
+- 📱 **Download Android**: [Latest APK](https://github.com/mananmadani/SpendTrail/releases/latest)
+
+---
+
+**Made with ❤️ for better financial tracking**
