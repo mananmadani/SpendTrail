@@ -3,10 +3,9 @@
 > A modern, privacy-focused expense and income tracker built as a Progressive Web App (PWA)
 
 [![Live Demo](https://img.shields.io/badge/Demo-Live-success)](https://mananmadani.github.io/SpendTrail/)
-[![Version](https://img.shields.io/badge/version-3.7-blue)](https://github.com/mananmadani/SpendTrail)
-[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
-[![Android APK](https://img.shields.io/badge/Android-APK-green)](https://github.com/mananmadani/SpendTrail/releases/latest)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/mananmadani/SpendTrail/pulls)
+[![Version](https://img.shields.io/badge/version-3.7-blue)]()
+[![License](https://img.shields.io/badge/license-MIT-green)]()
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)]()
 
 ## 📖 About
 
@@ -36,28 +35,9 @@ SpendTrail is a lightweight, privacy-first expense tracker that runs entirely in
 ## 🚀 Quick Start
 
 ### 🌐 Try Online
-**No installation required!** Visit: **[SpendTrail Web App](https://mananmadani.github.io/SpendTrail/)**
+**No installation required!** Visit: [SpendTrail App](https://mananmadani.github.io/SpendTrail/)
 
-### 📱 Download Android App
-
-📱 **[Download SpendTrail APK v3.7](https://github.com/mananmadani/SpendTrail/releases/latest)**
-
-Get the native Android app for the best offline experience!
-
-**How to Install:**
-1. Download the APK file from the link above
-2. Open the downloaded file on your Android phone
-3. Allow installation from unknown sources if prompted
-4. Install and enjoy SpendTrail!
-
-**Why Android App?**
-- ✅ True offline support
-- ✅ Faster performance  
-- ✅ Native Android experience
-- ✅ No browser needed
-- ✅ Installs like a regular app
-
-### 📲 Install as PWA (Web App)
+### 📱 Install as App
 
 <details>
 <summary><b>Android / Chrome</b></summary>
@@ -236,7 +216,7 @@ SpendTrail generates professional PDF reports with:
 
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/mananmadani/SpendTrail/issues).
+Contributions, issues, and feature requests are welcome! Feel free to check the issues page.
 
 ### How to Contribute
 
@@ -267,17 +247,16 @@ Contributions, issues, and feature requests are welcome! Feel free to check the 
 ### v3.7 (Current - January 2026)
 
 🐛 **Bug Fixes**
-- Enhanced app performance and reliability
+- Fixed minor bugs affecting app stability
+- Improved overall app performance
+- Enhanced error handling and validation
 
 ✨ **Improvements**
-- Minor UI refinements for better user experience
-- Optimized app loading times
-- Improved error handling
+- Better stability and reliability
+- Optimized resource usage
+- Minor UI refinements
 
 ### v3.6 (December 2025)
-
-✅ **New Features**
-- Enhanced privacy features
 
 🐛 **Bug Fixes**
 - Fixed transaction sorting to prioritize date over timestamp
@@ -306,7 +285,7 @@ Contributions, issues, and feature requests are welcome! Feel free to check the 
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the LICENSE file for details.
 
 **What does this mean?**
 
@@ -320,7 +299,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 **Manan Madani**
 
 - 🐙 GitHub: [@mananmadani](https://github.com/mananmadani)
-- 📧 Email: Open an [issue](https://github.com/mananmadani/SpendTrail/issues) for contact
+- 📧 Email: Open an issue for contact
 - 🌐 Project: [SpendTrail](https://github.com/mananmadani/SpendTrail)
 
 ## ⭐ Show Your Support
@@ -338,8 +317,6 @@ If SpendTrail helped you manage your finances better, please consider:
 - 🐛 **Bug Reports**: [Open an issue](https://github.com/mananmadani/SpendTrail/issues)
 - 💡 **Feature Requests**: [Open an issue](https://github.com/mananmadani/SpendTrail/issues)
 - ❓ **Questions**: [Discussions](https://github.com/mananmadani/SpendTrail/discussions)
-- 🌐 **Try the App**: [SpendTrail Web App](https://mananmadani.github.io/SpendTrail/)
-- 📱 **Download Android**: [Latest APK](https://github.com/mananmadani/SpendTrail/releases/latest)
 
 ---
 
