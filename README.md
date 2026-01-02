@@ -264,7 +264,7 @@ Contributions, issues, and feature requests are welcome! Feel free to check the 
 
 ## 📝 Changelog
 
-### v3.7 (Current - December 2025)
+### v3.7 (Current - January 2026)
 
 🐛 **Bug Fixes**
 - Enhanced app performance and reliability
