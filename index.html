@@ -181,5 +181,13 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
   <script src="app.js"></script>
+  <!-- PWA Install Tracking -->
+  <script>
+    // Track PWA installations
+    window.addEventListener('appinstalled', (evt) => {
+      fetch('https://api.countapi.xyz/hit/spendtrail-pwa/downloads')
+        .catch(() => {}); // Silent fail if offline
+    });
+  </script>
 </body>
   </html>
