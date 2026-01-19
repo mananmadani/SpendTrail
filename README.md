@@ -3,7 +3,7 @@
 > A modern, privacy-focused expense and income tracker built as a Progressive Web App (PWA)
 
 [![Live Demo](https://img.shields.io/badge/Demo-Live-success)](https://mananmadani.github.io/SpendTrail/)
-[![Downloads](https://hits.sh/github.com/mananmadani/SpendTrail/main.svg?label=downloads&color=7c1&labelColor=555&style=flat)](https://github.com/mananmadani/SpendTrail)
+[![Downloads](https://img.shields.io/badge/dynamic/json?url=https://api.countapi.xyz/get/spendtrail-pwa/downloads&label=downloads&query=value&color=7c1&labelColor=555&style=flat&suffix=%2B)](https://mananmadani.github.io/SpendTrail/)
 [![Version](https://img.shields.io/badge/version-3.7-blue)]()
 [![License](https://img.shields.io/badge/license-MIT-green)]()
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)]()
