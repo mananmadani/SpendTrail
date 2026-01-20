@@ -12,6 +12,27 @@
 
 SpendTrail is a lightweight, privacy-first expense tracker that runs entirely in your browser. No servers, no accounts, no tracking - just you and your financial data. Built with vanilla JavaScript and modern web technologies, it offers a seamless experience across all devices while keeping your data completely private.
 
+## 📸 Screenshots
+
+<div align="center">
+
+### Dashboard & Overview
+<img src="screenshots/dashboard.jpg" alt="Dashboard showing balance and recent transactions" width="800"/>
+
+### Add Transactions
+<img src="screenshots/add-transaction.jpg" alt="Add income or expense form" width="800"/>
+
+### Analytics & Insights
+<img src="screenshots/analytics.jpg" alt="Pie chart and bar chart analytics" width="800"/>
+
+### Ledger View
+<img src="screenshots/ledger.jpg" alt="Complete transaction ledger with filters" width="800"/>
+
+### PDF Export
+<img src="screenshots/pdf-export.jpg" alt="Professional PDF report example" width="800"/>
+
+</div>
+
 ## ✨ Key Features
 
 ### Core Functionality
@@ -113,6 +134,12 @@ SpendTrail/
 ├── manifest.json       # PWA manifest
 ├── service-worker.js   # Service worker for offline support
 ├── SpendTrail.png      # App icon (1024x1024)
+├── screenshots/        # App screenshots for README
+│   ├── dashboard.png
+│   ├── add-transaction.png
+│   ├── analytics.png
+│   ├── ledger.png
+│   └── pdf-export.png
 ├── README.md           # Documentation
 ├── LICENSE             # MIT License
 └── .gitignore          # Git ignore rules
