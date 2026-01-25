@@ -135,11 +135,11 @@ SpendTrail/
 ├── service-worker.js   # Service worker for offline support
 ├── SpendTrail.png      # App icon (1024x1024)
 ├── screenshots/        # App screenshots for README
-│   ├── dashboard.png
-│   ├── add-transaction.png
-│   ├── analytics.png
-│   ├── ledger.png
-│   └── pdf-export.png
+│   ├── dashboard.jpg
+│   ├── add-transaction.jpg
+│   ├── analytics.jpg
+│   ├── ledger.jpg
+│   └── pdf-export.jpg
 ├── README.md           # Documentation
 ├── LICENSE             # MIT License
 └── .gitignore          # Git ignore rules
