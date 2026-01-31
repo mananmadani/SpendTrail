@@ -1,10 +1,10 @@
 # 💰 SpendTrail
 
-> A modern, privacy-focused expense and income tracker built as a Progressive Web App (PWA)
+> A modern, privacy-focused expense and income tracker with multi-currency support built as a Progressive Web App (PWA)
 
 [![Live Demo](https://img.shields.io/badge/Demo-Live-success)](https://mananmadani.github.io/SpendTrail/)
 [![Downloads](https://hits.sh/github.com/mananmadani/SpendTrail/main.svg?label=downloads&color=7c1&labelColor=555&style=flat)](https://github.com/mananmadani/SpendTrail)
-[![Version](https://img.shields.io/badge/version-3.7-blue)]()
+[![Version](https://img.shields.io/badge/version-3.8-blue)]()
 [![License](https://img.shields.io/badge/license-MIT-green)]()
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)]()
 
@@ -17,19 +17,19 @@ SpendTrail is a lightweight, privacy-first expense tracker that runs entirely in
 <div align="center">
 
 ### Dashboard & Overview
-<img src="screenshots/dashboard.jpg" alt="Dashboard showing balance and recent transactions" width="800"/>
+<img src="screenshots/dashboard.jpg" alt="Dashboard showing balance and recent transactions" width="600"/>
 
 ### Add Transactions
-<img src="screenshots/add-transaction.jpg" alt="Add income or expense form" width="800"/>
+<img src="screenshots/add-transaction.jpg" alt="Add income or expense form" width="600"/>
 
 ### Analytics & Insights
-<img src="screenshots/analytics.jpg" alt="Pie chart and bar chart analytics" width="800"/>
+<img src="screenshots/analytics.jpg" alt="Pie chart and bar chart analytics" width="600"/>
 
 ### Ledger View
-<img src="screenshots/ledger.jpg" alt="Complete transaction ledger with filters" width="800"/>
+<img src="screenshots/ledger.jpg" alt="Complete transaction ledger with filters" width="600"/>
 
 ### PDF Export
-<img src="screenshots/pdf-export.jpg" alt="Professional PDF report example" width="800"/>
+<img src="screenshots/pdf-export.jpg" alt="Professional PDF report example" width="600"/>
 
 </div>
 
@@ -37,15 +37,17 @@ SpendTrail is a lightweight, privacy-first expense tracker that runs entirely in
 
 ### Core Functionality
 - 📊 **Income & Expense Tracking** - Simple, intuitive entry system with categories and notes
+- 💱 **Multi-Currency Support** - Choose from 30 currency symbols (₹, $, €, £, ¥, and more)
 - 📈 **Visual Analytics** - Beautiful pie charts, bar graphs, and trend analysis
 - 💰 **Real-time Balance** - Instant overview of your financial status
 - 📁 **Category Management** - Organize transactions with custom categories
-- 🔍 **Smart Ledger** - View and filter all entries with powerful search
+- 🔍 **Smart Search** - Search transactions by category or note in real-time
 
 ### Advanced Features
 - 📅 **Custom Statements** - Generate reports for any date range
 - 📄 **Professional PDF Export** - Beautiful, color-coded reports with tables and summaries
 - 💾 **Backup & Restore** - Simple JSON or AES-256 encrypted backups
+- 📋 **Complete Ledger** - View all entries with powerful filtering and search
 
 ### Technical Highlights
 - 🔒 **Privacy First** - All data stored locally using localStorage
@@ -53,6 +55,22 @@ SpendTrail is a lightweight, privacy-first expense tracker that runs entirely in
 - 📱 **Fully Responsive** - Optimized for mobile, tablet, and desktop
 - ⚡ **Offline Support** - Works without internet connection
 - 🎨 **Modern UI** - Clean, minimalist design with smooth animations
+
+## 🌍 Supported Currencies
+
+SpendTrail supports **30 currency symbols** from around the world:
+
+**Asia:** INR (₹), JPY (¥), CNY (元), SGD (S$), HKD (HK$), MYR (RM), THB (฿), IDR (Rp), PKR (₨), BDT (৳), KRW (₩)
+
+**Europe:** EUR (€), GBP (£), CHF (Fr), SEK (SEK), NOK (NOK), DKK (DKK), PLN (zł), TRY (₺), RUB (₽)
+
+**Americas:** USD ($), CAD (C$), BRL (R$), MXN (Mex$), AUD (A$), NZD (NZ$)
+
+**Middle East:** AED (د.إ), SAR (﷼), QAR (ر.ق)
+
+**Africa:** ZAR (R)
+
+*Note: Currency selection only changes the display symbol. No conversion calculations are performed.*
 
 ## 🚀 Quick Start
 
@@ -147,6 +165,12 @@ SpendTrail/
 
 ## 📚 Usage Guide
 
+### Setting Your Currency
+
+1. Go to **More → Currency Symbol**
+2. Select your preferred currency from the dropdown
+3. All amounts will now display with your chosen symbol
+
 ### Adding Transactions
 
 1. Click the **Add** tab in the bottom navigation
@@ -157,6 +181,13 @@ SpendTrail/
    - **Date** (defaults to today)
    - **Note** (optional)
 4. Click **"Add Income"** or **"Add Expense"**
+
+### Searching Transactions
+
+1. Go to **Insights → All Entries**
+2. Use the **search bar** to filter by category or note
+3. Search works in real-time as you type
+4. Combine with Income/Expense filters for precise results
 
 ### Viewing Analytics
 
@@ -214,12 +245,15 @@ SpendTrail generates professional PDF reports with:
 - Column headers (Date, Category, Note, Amount)
 - Alternating row backgrounds for readability
 - Green text for income, red for expense
+- Currency symbols displayed as text codes (e.g., Rs., USD, EUR)
 
 📄 **Professional Formatting**
 - Automatic pagination with page numbers
 - Headers repeated on each page
 - Branded header with app logo
-- Indian date format (e.g., "14 Dec 2025")
+- International date format support
+
+*Note: PDF exports display currency symbols as readable text codes (Rs., USD, EUR, etc.) due to PDF font limitations.*
 
 ## 🔒 Privacy & Security
 
@@ -244,7 +278,7 @@ SpendTrail generates professional PDF reports with:
 
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome! Feel free to check the issues page.
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/mananmadani/SpendTrail/issues).
 
 ### How to Contribute
 
@@ -272,7 +306,18 @@ Contributions, issues, and feature requests are welcome! Feel free to check the 
 
 ## 📝 Changelog
 
-### v3.7 (Current - January 2026)
+### v3.8 (Current - February 2026)
+
+✨ **New Features**
+- 💱 **Multi-Currency Support** - Choose from 30 currency symbols worldwide
+- 🔍 **Search in All Entries** - Real-time search by category or note
+- 💱 **Currency Settings** - Easily switch between different currency symbols
+
+📚 **Improvements**
+- Added GitHub support link for issue reporting
+- Better PDF readability with currency text codes
+
+### v3.7 (January 2026)
 
 🐛 **Bug Fixes**
 - Fixed minor bugs affecting app stability
@@ -327,8 +372,8 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 **Manan Madani**
 
 - 🐙 GitHub: [@mananmadani](https://github.com/mananmadani)
-- 📧 Email: Open an issue for contact
 - 🌐 Project: [SpendTrail](https://github.com/mananmadani/SpendTrail)
+- 📧 Support: [Open an issue](https://github.com/mananmadani/SpendTrail/issues)
 
 ## ⭐ Show Your Support
 
