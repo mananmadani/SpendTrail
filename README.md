@@ -17,19 +17,19 @@ SpendTrail is a lightweight, privacy-first expense tracker that runs entirely in
 <div align="center">
 
 ### Dashboard & Overview
-<img src="screenshots/dashboard.jpg" alt="Dashboard showing balance and recent transactions" width="600"/>
+<img src="screenshots/dashboard.jpg" alt="Dashboard showing balance and recent transactions" width="300"/>
 
 ### Add Transactions
-<img src="screenshots/add-transaction.jpg" alt="Add income or expense form" width="600"/>
+<img src="screenshots/add-transaction.jpg" alt="Add income or expense form" width="300"/>
 
 ### Analytics & Insights
-<img src="screenshots/analytics.jpg" alt="Pie chart and bar chart analytics" width="600"/>
+<img src="screenshots/analytics.jpg" alt="Pie chart and bar chart analytics" width="300"/>
 
 ### Ledger View
-<img src="screenshots/ledger.jpg" alt="Complete transaction ledger with filters" width="600"/>
+<img src="screenshots/ledger.jpg" alt="Complete transaction ledger with filters" width="300"/>
 
 ### PDF Export
-<img src="screenshots/pdf-export.jpg" alt="Professional PDF report example" width="600"/>
+<img src="screenshots/pdf-export.jpg" alt="Professional PDF report example" width="300"/>
 
 </div>
 
