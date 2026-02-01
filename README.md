@@ -60,15 +60,15 @@ SpendTrail is a lightweight, privacy-first expense tracker that runs entirely in
 
 SpendTrail supports **30 currency symbols** from around the world:
 
-**Asia:** INR (₹), JPY (¥), CNY (元), SGD (S$), HKD (HK$), MYR (RM), THB (฿), IDR (Rp), PKR (₨), BDT (৳), KRW (₩)
+**Asia:** INR, JPY, CNY, SGD, HKD, MYR, THB, IDR, PKR, BDT, KRW
 
-**Europe:** EUR (€), GBP (£), CHF (Fr), SEK (SEK), NOK (NOK), DKK (DKK), PLN (zł), TRY (₺), RUB (₽)
+**Europe:** EUR, GBP, CHF, SEK, NOK, DKK, PLN, TRY, RUB
 
-**Americas:** USD ($), CAD (C$), BRL (R$), MXN (Mex$), AUD (A$), NZD (NZ$)
+**Americas:** USD, CAD, BRL, MXN, AUD, NZD
 
-**Middle East:** AED (د.إ), SAR (﷼), QAR (ر.ق)
+**Middle East:** AED, SAR, QAR
 
-**Africa:** ZAR (R)
+**Africa:** ZAR
 
 *Note: Currency selection only changes the display symbol. No conversion calculations are performed.*
 
