@@ -146,22 +146,39 @@ python -m http.server 8000
 
 ```
 SpendTrail/
-├── index.html           # Main HTML file
-├── app.js              # Core application logic
-├── style.css           # Styles and themes 
-├── manifest.json       # PWA manifest
-├── service-worker.js   # Service worker for offline support
-├── SpendTrail.png      # App icon (1024x1024)
-├── screenshots/        # App screenshots for README
+├── index.html                    # Main HTML file with SEO meta tags
+├── app.js                        # Core application logic
+├── style.css                     # Styles and themes 
+├── manifest.json                 # PWA manifest for installable app
+├── service-worker.js             # Service worker for offline support
+├── SpendTrail.png                # App icon (1024x1024)
+├── googlea8b40020455ab928.html   # Google Search Console verification file
+├── screenshots/                  # App screenshots for README
 │   ├── dashboard.jpg
 │   ├── add-transaction.jpg
 │   ├── analytics.jpg
 │   ├── ledger.jpg
 │   └── pdf-export.jpg
-├── README.md           # Documentation
-├── LICENSE             # MIT License
-└── .gitignore          # Git ignore rules
+├── README.md                     # Project documentation
+├── LICENSE                       # MIT License
+└── .gitignore                    # Git ignore rules
 ```
+
+### 📋 File Descriptions
+
+| File | Purpose |
+|------|---------|
+| `index.html` | Main application entry point with SEO optimization |
+| `app.js` | Core JavaScript logic for transactions, analytics, and storage |
+| `style.css` | All styling including responsive design and animations |
+| `manifest.json` | PWA configuration for app installation |
+| `service-worker.js` | Enables offline functionality and app caching |
+| `SpendTrail.png` | App icon used for PWA and branding |
+| `googlea8b40020455ab928.html` | Google Search Console ownership verification file |
+| `screenshots/` | Directory containing app screenshots for documentation |
+| `README.md` | This file - comprehensive project documentation |
+| `LICENSE` | MIT License terms and conditions |
+| `.gitignore` | Specifies files to exclude from version control |
 
 ## 📚 Usage Guide
 
