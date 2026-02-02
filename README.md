@@ -168,7 +168,7 @@ SpendTrail/
 
 | File | Purpose |
 |------|---------|
-| `index.html` | Main application entry point with SEO optimization |
+| `index.html` | Main application entry point |
 | `app.js` | Core JavaScript logic for transactions, analytics, and storage |
 | `style.css` | All styling including responsive design and animations |
 | `manifest.json` | PWA configuration for app installation |
