@@ -28,7 +28,7 @@ SpendTrail is a lightweight, privacy-first expense tracker that runs entirely in
 ### Ledger View
 <img src="screenshots/ledger.jpg" alt="Complete transaction ledger with filters" width="300"/>
 
-### PDF Export
+### More
 <img src="screenshots/pdf-export.jpg" alt="Professional PDF report example" width="300"/>
 
 </div>
