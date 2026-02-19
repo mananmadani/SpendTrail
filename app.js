@@ -638,7 +638,7 @@ function showAnalytics(days = 30, type = 'expense') {
   const data = getData();
   const currency = getCurrencySymbol();
   const cutoffDate = new Date();
-  cutoffDate.setDate(cutoffDate.getDate() - days);
+  cutoffDate.setDate(cutoffDate.getDate() - (days - 1));
   const cutoffStr = cutoffDate.toISOString().split('T')[0];
   
   const filteredExpenses = data.expenses.filter(e => e.date >= cutoffStr);
