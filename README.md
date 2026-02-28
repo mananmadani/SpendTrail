@@ -1,16 +1,16 @@
 # 💰 SpendTrail
 
-> A modern, privacy-focused expense and income tracker with multi-currency support built as a Progressive Web App (PWA)
+> A modern, privacy-focused expense and income tracker with multi-profile and multi-currency support built as a Progressive Web App (PWA)
 
 [![Live Demo](https://img.shields.io/badge/Demo-Live-success)](https://mananmadani.github.io/SpendTrail/)
 [![Downloads](https://hits.sh/github.com/mananmadani/SpendTrail/main.svg?label=downloads&color=7c1&labelColor=555&style=flat)](https://github.com/mananmadani/SpendTrail)
-[![Version](https://img.shields.io/badge/version-3.8-blue)]()
+[![Version](https://img.shields.io/badge/version-3.9-blue)]()
 [![License](https://img.shields.io/badge/license-MIT-green)]()
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)]()
 
 ## 📖 About
 
-SpendTrail is a lightweight, privacy-first expense tracker that runs entirely in your browser. No servers, no accounts, no tracking - just you and your financial data. Built with vanilla JavaScript and modern web technologies, it offers a seamless experience across all devices while keeping your data completely private.
+SpendTrail is a lightweight, privacy-first expense tracker that runs entirely in your browser. No servers, no accounts, no tracking - just you and your financial data. Built with vanilla JavaScript and modern web technologies, it offers a seamless experience across all devices while keeping your data completely private. With v3.9, SpendTrail now supports multiple isolated profiles — perfect for separating personal, business, family, or travel finances on a single device.
 
 ## 📸 Screenshots
 
@@ -29,7 +29,7 @@ SpendTrail is a lightweight, privacy-first expense tracker that runs entirely in
 <img src="screenshots/ledger.jpg" alt="Complete transaction ledger with filters" width="300"/>
 
 ### More
-<img src="screenshots/pdf-export.jpg" alt="Professional PDF report example" width="300"/>
+<img src="screenshots/more.jpg" alt="More tab showing profiles, backup, and settings" width="300"/>
 
 </div>
 
@@ -44,9 +44,10 @@ SpendTrail is a lightweight, privacy-first expense tracker that runs entirely in
 - 🔍 **Smart Search** - Search transactions by category or note in real-time
 
 ### Advanced Features
+- 👤 **Multi-Profile Support** - Up to 5 fully isolated profiles for personal, business, family, or travel finances
 - 📅 **Custom Statements** - Generate reports for any date range
 - 📄 **Professional PDF Export** - Beautiful, color-coded reports with tables and summaries
-- 💾 **Backup & Restore** - Simple JSON or AES-256 encrypted backups
+- 💾 **Backup & Restore** - Simple JSON or AES-256 encrypted backups per profile
 - 📋 **Complete Ledger** - View all entries with powerful filtering and search
 
 ### Technical Highlights
@@ -55,6 +56,17 @@ SpendTrail is a lightweight, privacy-first expense tracker that runs entirely in
 - 📱 **Fully Responsive** - Optimized for mobile, tablet, and desktop
 - ⚡ **Offline Support** - Works without internet connection
 - 🎨 **Modern UI** - Clean, minimalist design with smooth animations
+
+## 👤 Multi-Profile System
+
+SpendTrail v3.9 introduces fully isolated profiles — each profile acts as a completely separate instance of the app:
+
+- **Up to 5 profiles** — Personal, Business, Travel, Family, and more
+- **Complete isolation** — transactions, categories, currency settings and analytics are all separate per profile
+- **Profile indicator** — active profile name always visible in the app header
+- **Easy switching** — switch profiles from More → Manage Profiles
+- **Safe migration** — existing users' data is automatically migrated to the default Personal profile on first launch, with zero data loss
+- **Profile-aware exports** — backup files and PDF reports include the profile name
 
 ## 🌍 Supported Currencies
 
@@ -70,7 +82,7 @@ SpendTrail supports **30 currency symbols** from around the world:
 
 **Africa:** ZAR
 
-*Note: Currency selection only changes the display symbol. No conversion calculations are performed.*
+*Note: Currency selection only changes the display symbol. No conversion calculations are performed. Each profile can have its own currency setting.*
 
 ## 🚀 Quick Start
 
@@ -148,7 +160,7 @@ python -m http.server 8000
 SpendTrail/
 ├── index.html                    # Main HTML file
 ├── app.js                        # Core application logic
-├── style.css                     # Styles and themes 
+├── style.css                     # Styles and themes
 ├── manifest.json                 # PWA manifest for installable app
 ├── service-worker.js             # Service worker for offline support
 ├── SpendTrail.png                # App icon (1024x1024)
@@ -157,7 +169,7 @@ SpendTrail/
 │   ├── add-transaction.jpg
 │   ├── analytics.jpg
 │   ├── ledger.jpg
-│   └── pdf-export.jpg
+│   └── more.jpg
 ├── README.md                     # Project documentation
 ├── LICENSE                       # MIT License
 └── .gitignore                    # Git ignore rules
@@ -168,7 +180,7 @@ SpendTrail/
 | File | Purpose |
 |------|---------|
 | `index.html` | Main application entry point |
-| `app.js` | Core JavaScript logic for transactions, analytics, and storage |
+| `app.js` | Core JavaScript logic for transactions, analytics, profiles and storage |
 | `style.css` | All styling including responsive design and animations |
 | `manifest.json` | PWA configuration for app installation |
 | `service-worker.js` | Enables offline functionality and app caching |
@@ -180,11 +192,21 @@ SpendTrail/
 
 ## 📚 Usage Guide
 
+### Managing Profiles
+
+1. Go to **More → Manage Profiles**
+2. Your current active profile is highlighted with a blue border and **● Active** badge
+3. **Switch profile** — tap any inactive profile card to switch to it
+4. **Create profile** — tap **＋ New Profile**, enter a name (max 20 characters, up to 5 profiles)
+5. **Rename profile** — tap **Rename** on any profile card
+6. **Delete profile** — tap **Delete** on any inactive profile (permanently removes all its data)
+7. The active profile name is always visible next to the SpendTrail logo in the header
+
 ### Setting Your Currency
 
 1. Go to **More → Currency Symbol**
 2. Select your preferred currency from the dropdown
-3. All amounts will now display with your chosen symbol
+3. The setting is saved per profile — each profile can have a different currency
 
 ### Adding Transactions
 
@@ -192,7 +214,7 @@ SpendTrail/
 2. Toggle between **Income** or **Expense**
 3. Enter:
    - **Amount** (e.g., 500.00)
-   - **Category** (e.g., Food, Salary, Rent)
+   - **Category** (e.g., Food, Salary, Rent) — suggestions shown from current profile only
    - **Date** (defaults to today)
    - **Note** (optional)
 4. Click **"Add Income"** or **"Add Expense"**
@@ -221,23 +243,27 @@ SpendTrail/
 3. Click **"Generate"** to view transactions
 4. Click **"Export PDF"** to download a professional report
 
+### Exporting PDF Reports
+
+1. Go to **Insights → Export PDF** for a complete financial report of the active profile
+2. The PDF filename includes the profile name (e.g. `SpendTrail-Personal.pdf`)
+3. For a specific date range, use **Insights → Custom Statement → Export PDF**
+
 ### Managing Your Data
 
 **Backup Options:**
 
-- **Simple Backup**: Go to **More → Backup Data** (JSON format, human-readable)
+- **Simple Backup**: Go to **More → Backup Data** (JSON format, includes profile name in filename)
 - **Encrypted Backup**: Go to **More → Encrypted Backup** (AES-256 encrypted, password-protected)
+
+*Note: Backups are per-profile. Each profile's data is backed up and restored independently.*
 
 **Restore Data:**
 
 1. Go to **More → Restore Data**
 2. Select your backup file (`.json` or `.encrypted`)
 3. Enter password (if encrypted)
-4. Confirm restoration
-
-**Export Full Report:**
-
-- Go to **More → Export PDF** for a complete financial report
+4. Confirm restoration — data will be restored into the currently active profile
 
 ### Edit or Delete Transactions
 
@@ -263,9 +289,10 @@ SpendTrail generates professional PDF reports with:
 - Currency symbols displayed as text codes (e.g., Rs., USD, EUR)
 
 📄 **Professional Formatting**
+- Profile name in report subtitle
 - Automatic pagination with page numbers
 - Headers repeated on each page
-- Branded header with app logo
+- Branded header with app name
 - International date format support
 
 *Note: PDF exports display currency symbols as readable text codes (Rs., USD, EUR, etc.) due to PDF font limitations.*
@@ -274,22 +301,23 @@ SpendTrail generates professional PDF reports with:
 
 ### Data Storage
 
-✅ **100% Local Storage** - All data stored in your browser's localStorage  
-✅ **No Cloud Sync** - Data never leaves your device  
-✅ **No Tracking** - Zero analytics, cookies, or trackers  
-✅ **No Registration** - No accounts, emails, or personal info required  
+✅ **100% Local Storage** - All data stored in your browser's localStorage
+✅ **No Cloud Sync** - Data never leaves your device
+✅ **No Tracking** - Zero analytics, cookies, or trackers
+✅ **No Registration** - No accounts, emails, or personal info required
+✅ **Profile Isolation** - Each profile's data is fully namespaced and separated
 
 ### Encryption
 
-🔐 **AES-256 Encryption** - Military-grade encryption for backups  
-🔑 **Your Password Only** - Only you know the password  
-⚠️ **Password Recovery** - Not possible (by design for security)  
+🔐 **AES-256 Encryption** - Military-grade encryption for backups
+🔑 **Your Password Only** - Only you know the password
+⚠️ **Password Recovery** - Not possible (by design for security)
 
 ### Data Control
 
-📥 **Export Anytime** - Download your data in JSON or PDF  
-🗑️ **Delete Anytime** - Permanently delete all data  
-💾 **Backup Control** - Create backups whenever you want  
+📥 **Export Anytime** - Download your data in JSON or PDF
+🗑️ **Delete Anytime** - Permanently delete all data in the active profile, or delete an entire profile
+💾 **Backup Control** - Create backups per profile whenever you want
 
 ## 🤝 Contributing
 
@@ -321,7 +349,20 @@ Contributions, issues, and feature requests are welcome! Feel free to check the 
 
 ## 📝 Changelog
 
-### v3.8 (Current - February 2026)
+### v3.9 (March 2026)
+
+✨ **New Features**
+- 👤 **Multi-Profile Support** - Create up to 5 fully isolated profiles (Personal, Business, Travel, Family, etc.)
+- 🔄 **Profile Switcher** - Manage and switch profiles from More → Manage Profiles
+- 🏷️ **Profile Header Indicator** - Active profile name always visible in the app header
+- 📄 **Profile-aware Exports** - Backup filenames and PDF reports now include the active profile name
+
+🔧 **Improvements**
+- **Export PDF moved to Insights tab** — sits alongside Analytics, All Entries, Ledger and Custom Statement where it logically belongs
+- **Profile-scoped Delete All Data** — only clears data in the active profile, other profiles are untouched
+- **Automatic migration** — existing users' data seamlessly migrated to a default Personal profile on first launch with zero data loss
+
+### v3.8 (February 2026)
 
 ✨ **New Features**
 - 💱 **Multi-Currency Support** - Choose from 30 currency symbols worldwide
@@ -377,10 +418,10 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 **What does this mean?**
 
-✅ Free to use for personal and commercial projects  
-✅ Free to modify and distribute  
-✅ No warranty provided  
-❌ Author not liable for any damages  
+✅ Free to use for personal and commercial projects
+✅ Free to modify and distribute
+✅ No warranty provided
+❌ Author not liable for any damages
 
 ## 👨‍💻 Author
 
