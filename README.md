@@ -9,7 +9,7 @@
 
 ## 📖 About
 
-SpendTrail is a lightweight, privacy-first expense tracker that runs entirely in your browser. No servers, no accounts, no tracking - just you and your financial data. Built with vanilla JavaScript and modern web technologies, it offers a seamless experience across all devices while keeping your data completely private. With v3.9, SpendTrail now supports multiple isolated profiles — perfect for separating personal, business, family, or travel finances on a single device.
+SpendTrail is a lightweight, privacy-first expense tracker that runs entirely in your browser. No servers, no accounts, no tracking - just you and your financial data. Built with vanilla JavaScript and modern web technologies.
 
 ## 📸 Screenshots
 
