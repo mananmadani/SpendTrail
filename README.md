@@ -5,12 +5,11 @@
 [![Live Demo](https://img.shields.io/badge/Demo-Live-success)](https://mananmadani.github.io/SpendTrail/)
 [![Downloads](https://hits.sh/github.com/mananmadani/SpendTrail/main.svg?label=downloads&color=7c1&labelColor=555&style=flat)](https://github.com/mananmadani/SpendTrail)
 [![Version](https://img.shields.io/badge/version-3.9-blue)]()
-[![License](https://img.shields.io/badge/license-MIT-green)]()
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)]()
+[![License](https://img.shields.io/badge/license-CC%20BY--NC--ND%204.0-lightgrey)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
 
 ## 📖 About
 
-SpendTrail is a lightweight, privacy-first expense tracker that runs entirely in your browser. No servers, no accounts, no tracking - just you and your financial data. Built with vanilla JavaScript and modern web technologies, it offers a seamless experience across all devices while keeping your data completely private. 
+SpendTrail is a lightweight, privacy-first expense tracker that runs entirely in your browser. No servers, no accounts, no tracking - just you and your financial data. Built with vanilla JavaScript and modern web technologies, it offers a seamless experience across all devices while keeping your data completely private. With v3.9, SpendTrail now supports multiple isolated profiles — perfect for separating personal, business, family, or travel finances on a single device.
 
 ## 📸 Screenshots
 
@@ -171,7 +170,7 @@ SpendTrail/
 │   ├── ledger.jpg
 │   └── more.jpg
 ├── README.md                     # Project documentation
-├── LICENSE                       # MIT License
+├── LICENSE                       # CC BY-NC-ND 4.0 License
 └── .gitignore                    # Git ignore rules
 ```
 
@@ -187,7 +186,7 @@ SpendTrail/
 | `SpendTrail.png` | App icon used for PWA and branding |
 | `screenshots/` | Directory containing app screenshots for documentation |
 | `README.md` | This file - comprehensive project documentation |
-| `LICENSE` | MIT License terms and conditions |
+| `LICENSE` | CC BY-NC-ND 4.0 License terms and conditions |
 | `.gitignore` | Specifies files to exclude from version control |
 
 ## 📚 Usage Guide
@@ -319,34 +318,6 @@ SpendTrail generates professional PDF reports with:
 🗑️ **Delete Anytime** - Permanently delete all data in the active profile, or delete an entire profile
 💾 **Backup Control** - Create backups per profile whenever you want
 
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/mananmadani/SpendTrail/issues).
-
-### How to Contribute
-
-1. Fork the project
-2. Create your feature branch
-   ```bash
-   git checkout -b feature/AmazingFeature
-   ```
-3. Commit your changes
-   ```bash
-   git commit -m 'Add some AmazingFeature'
-   ```
-4. Push to the branch
-   ```bash
-   git push origin feature/AmazingFeature
-   ```
-5. Open a Pull Request
-
-### Development Guidelines
-
-- Write clean, readable code
-- Follow existing code style
-- Test on multiple browsers
-- Update documentation if needed
-
 ## 📝 Changelog
 
 ### v3.9 (March 2026)
@@ -359,6 +330,7 @@ Contributions, issues, and feature requests are welcome! Feel free to check the 
 
 🔧 **Improvements**
 - **Export PDF moved to Insights tab** — sits alongside Analytics, All Entries, Ledger and Custom Statement where it logically belongs
+- **Profile-scoped category suggestions** — category autocomplete only shows categories from the active profile, never cross-profile
 - **Profile-scoped Delete All Data** — only clears data in the active profile, other profiles are untouched
 - **Automatic migration** — existing users' data seamlessly migrated to a default Personal profile on first launch with zero data loss
 
@@ -414,14 +386,20 @@ Contributions, issues, and feature requests are welcome! Feel free to check the 
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the **Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License (CC BY-NC-ND 4.0)**.
 
-**What does this mean?**
+[![License](https://img.shields.io/badge/license-CC%20BY--NC--ND%204.0-lightgrey)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
 
-✅ Free to use for personal and commercial projects
-✅ Free to modify and distribute
-✅ No warranty provided
-❌ Author not liable for any damages
+✅ You may view and reference the source code freely
+✅ You may share the original, unmodified code with attribution
+✅ Copyright and ownership permanently belong to Manan Madani
+❌ You may not use this code commercially without written permission
+❌ You may not modify, adapt, or build derivative works for distribution
+❌ You may not fork and redistribute without written permission
+
+For commercial use or custom licensing, open an issue at [github.com/mananmadani/SpendTrail/issues](https://github.com/mananmadani/SpendTrail/issues)
+
+Full license: [creativecommons.org/licenses/by-nc-nd/4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/)
 
 ## 👨‍💻 Author
 
@@ -438,7 +416,6 @@ If SpendTrail helped you manage your finances better, please consider:
 - ⭐ Starring the repository
 - 🐛 Reporting bugs or issues
 - 💡 Suggesting new features
-- 🔀 Contributing code improvements
 - 📢 Sharing with friends and family
 
 ## 📬 Support & Feedback
