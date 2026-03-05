@@ -1150,7 +1150,7 @@ function showPrivacy() {
         <p style="margin:8px 0 0;color:#424242;">Your financial data is yours and yours alone. SpendTrail will never collect, transmit, sell, or share your personal information with anyone, ever.</p>
       </div>
 
-      <p style="margin-top:24px;font-size:13px;color:#757575;text-align:center;">Last Updated: February 2026 | Version 3.9</p>
+      <p style="margin-top:24px;font-size:13px;color:#757575;text-align:center;">Last Updated: March 2026 | Version 3.9</p>
     </div>`;
   openOverlay('Privacy Policy', content);
 }
