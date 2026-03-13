@@ -59,14 +59,14 @@ SpendTrail is a lightweight, privacy-first expense tracker that runs entirely in
 
 ## 🚀 Quick Start
 
-**No installation required.** Visit: [mananmadani.github.io/SpendTrail](https://mananmadani.github.io/SpendTrail/)
+**No installation required.** [Open App](https://mananmadani.github.io/SpendTrail/)
 
 ### Install as App
 
 <details>
 <summary><b>Android / Chrome</b></summary>
 
-1. Open the app in Chrome
+1. Tap [Open App](https://mananmadani.github.io/SpendTrail/) to launch in Chrome
 2. Tap menu (⋮) → **"Install app"** or **"Add to Home screen"**
 3. SpendTrail appears on your home screen
 </details>
@@ -74,7 +74,7 @@ SpendTrail is a lightweight, privacy-first expense tracker that runs entirely in
 <details>
 <summary><b>iOS / Safari</b></summary>
 
-1. Open the app in Safari
+1. Tap [Open App](https://mananmadani.github.io/SpendTrail/) in Safari
 2. Tap the **Share** button → **"Add to Home Screen"**
 3. Tap **"Add"** to confirm
 </details>
@@ -82,7 +82,7 @@ SpendTrail is a lightweight, privacy-first expense tracker that runs entirely in
 <details>
 <summary><b>Desktop (Chrome, Edge, Brave)</b></summary>
 
-1. Open the app in your browser
+1. Visit [Open App](https://mananmadani.github.io/SpendTrail/) in your browser
 2. Click the **install icon** (⊕) in the address bar
 3. Click **"Install"**
 </details>
@@ -197,9 +197,9 @@ Free to use, modify, and distribute. No warranty provided.
 
 ## 👨‍💻 Author
 
-**Manan Madani**  
-🐙 [github.com/mananmadani](https://github.com/mananmadani)  
-🐛 [Report a bug or request a feature](https://github.com/mananmadani/SpendTrail/issues)
+**Manan Madani**
+
+🐙 [GitHub Profile](https://github.com/mananmadani) &nbsp;·&nbsp; 🌐 [SpendTrail Repo](https://github.com/mananmadani/SpendTrail) &nbsp;·&nbsp; 🐛 [Report an Issue](https://github.com/mananmadani/SpendTrail/issues)
 
 ---
 
