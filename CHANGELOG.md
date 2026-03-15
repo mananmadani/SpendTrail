@@ -4,6 +4,15 @@ All notable changes to SpendTrail are documented here.
 
 ---
 
+## v4.0.2 — March 2026
+
+🐛 **Bug Fixes**
+- **Date Label Bug Fix** — "Today" and "Yesterday" labels were incorrect for users in timezones behind UTC (e.g. USA, Europe). Dates stored as `"2025-03-15"` were being parsed as UTC midnight, causing them to appear as the previous day on affected devices. Date strings are now parsed as local time, fixing the labels for all timezones worldwide
+- **Analytics Chart UTC Bug Fix** — charts (pie, bar, and trend) were using UTC time to calculate the cutoff date for the selected period (Week / Month / 3 Months). This caused today's transactions to be excluded from analytics for up to 5.5 hours after midnight in India, and longer in timezones further ahead of UTC. All chart date calculations now use local device time
+- **Trend Chart Date Keys Fix** — the daily trend chart was generating date keys using UTC, meaning the bars could be misaligned with actual local dates. Date keys are now generated using local time, ensuring each bar correctly represents the local calendar day
+
+---
+
 ## v4.0.1 — March 2026
 
 🔒 **Security**
