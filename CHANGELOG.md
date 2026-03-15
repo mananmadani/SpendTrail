@@ -4,6 +4,17 @@ All notable changes to SpendTrail are documented here.
 
 ---
 
+## v4.0.1 — March 2026
+
+🔒 **Security**
+- **XSS Vulnerability Fix** — category names and notes are now properly escaped before being injected into the UI. Previously, malicious input like `<script>` tags in category or note fields could break the layout or execute unintended code. All user-entered values across All Entries, Ledger, Category Details, Custom Statement, Analytics, Edit form, and Recent Transactions are now escaped using `escapeHtml()` before rendering
+- Datalist category suggestions and currency select options are also now escaped
+
+🔧 **Improvements**
+- Backup files now correctly report `version: 4.0.1`
+
+---
+
 ## v4.0 — March 2026
 
 ✨ **New Features**
