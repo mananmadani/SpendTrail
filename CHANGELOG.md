@@ -4,6 +4,14 @@ All notable changes to SpendTrail are documented here.
 
 ---
 
+## v4.0.3 — March 2026
+
+🎨 **UI Fixes**
+- **Overlay Title Overflow** — long category or profile names in the overlay header no longer break the layout. The title now truncates cleanly with `...` if it exceeds the available space, and the Back button is always fully visible regardless of title length
+- **iOS Scroll Bleed** — on iPhone and iPad, scrolling to the bottom of an overlay (such as All Entries, Analytics, or Privacy Policy) would bleed through and scroll the background page. The overlay now correctly contains its own scroll and the background page stays in place
+
+---
+
 ## v4.0.2 — March 2026
 
 🐛 **Bug Fixes**
