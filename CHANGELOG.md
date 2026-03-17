@@ -4,13 +4,20 @@ All notable changes to SpendTrail are documented here.
 
 ---
 
+## v4.0.6 — March 2026
+
+🎨 **UI Fixes**
+- **Tap Highlight Removed** — on Android and iOS, tapping any button or interactive element showed a blue highlight flash (browser default tap highlight). This has been removed across the entire app for a cleaner, more native app-like feel
+
+---
+
 ## v4.0.5 — March 2026
 
 ✨ **New Features**
 - **System Navigation Support** — the Android back button, Android swipe-back gesture, iOS swipe-back gesture, and desktop browser back button now all work correctly within the app. Previously pressing back would exit the app or go to a previous website. Now it closes the open overlay first, then navigates back to the Home tab if on another tab, and only exits the app when already on Home with no overlay open
 
 🐛 **Bug Fixes**
-- **Edit Entry Back Navigation Fix** — pressing back while editing a transaction from All Entries would incorrectly close the entire overlay, taking the user out of All Entries. Similarly, editing from a Category Details screen would close the entire Ledger view. Back now correctly returns to All Entries or the specific Category Details screen depending on where the edit was opened from.
+- **Edit Entry Back Navigation Fix** — pressing back while editing a transaction from All Entries would incorrectly close the entire overlay, taking the user out of All Entries. Similarly, editing from a Category Details screen would close the entire Ledger view. Back now correctly returns to All Entries or the specific Category Details screen depending on where the edit was opened from. This bug existed before system navigation was introduced and affected the in-app ← Back button as well
 
 ---
 
