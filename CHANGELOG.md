@@ -4,6 +4,13 @@ All notable changes to SpendTrail are documented here.
 
 ---
 
+## v4.0.4 — March 2026
+
+🎨 **UI Improvements**
+- **Trend Chart Y-Axis Decimals Removed** — the Y-axis labels on the trend chart were showing unnecessary decimal places (e.g. `₹10,000.00`, `₹0.00`). Chart axis labels now display as whole numbers (e.g. `₹10,000`, `₹0`), giving the chart more horizontal space and making the axis easier to read at a glance
+
+---
+
 ## v4.0.3 — March 2026
 
 🎨 **UI Fixes**
