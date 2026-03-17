@@ -1216,7 +1216,7 @@ function showPrivacy() {
 
       <!-- Footer -->
       <div style="text-align:center;padding-top:8px;padding-bottom:4px;">
-        <p style="font-size:12px;color:#BDBDBD;margin:0;">Last Updated: March 2026 &nbsp;|&nbsp; Version 4.0.5</p>
+        <p style="font-size:12px;color:#BDBDBD;margin:0;">Last Updated: March 2026 &nbsp;|&nbsp; Version 4.0.6</p>
       </div>
 
     </div>`;
