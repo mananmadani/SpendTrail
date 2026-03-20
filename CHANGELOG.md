@@ -4,6 +4,13 @@ All notable changes to SpendTrail are documented here.
 
 ---
 
+## v4.0.7 — March 2026
+
+🐛 **Bug Fixes**
+- **Back Navigation from Ledger Fix** — pressing back after closing a category ledger would skip the Insights tab entirely and exit the app. The system back button now correctly steps through each level: Category Details → Ledger → Insights tab → Home tab → Exit app
+
+---
+
 ## v4.0.6 — March 2026
 
 🎨 **UI Fixes**
