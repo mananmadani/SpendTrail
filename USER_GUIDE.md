@@ -137,15 +137,17 @@ A complete guide to using every feature in SpendTrail.
 
 ## 💾 Backup & Restore
 
+All backup and restore options are available under **More → Backup & Restore**.
+
 ### Creating a Backup
 
 **Simple Backup (JSON):**
-1. Go to **More → Backup Data**
+1. Go to **More → Backup & Restore → Backup Data**
 2. A `.json` file is saved to your device
 3. File is human-readable but **not encrypted** — store it securely
 
 **Encrypted Backup:**
-1. Go to **More → Encrypted Backup**
+1. Go to **More → Backup & Restore → Encrypted Backup**
 2. Enter a password (minimum 8 characters)
 3. Confirm the password
 4. An `.encrypted` file is saved to your device
@@ -153,7 +155,7 @@ A complete guide to using every feature in SpendTrail.
 
 ### Restoring a Backup
 
-1. Go to **More → Restore Data**
+1. Go to **More → Backup & Restore → Restore Data**
 2. Select your backup file (`.json` or `.encrypted`)
 3. Enter the password if restoring an encrypted backup
 4. Confirm — data is restored into the currently active profile
