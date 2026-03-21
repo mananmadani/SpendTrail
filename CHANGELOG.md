@@ -4,6 +4,17 @@ All notable changes to SpendTrail are documented here.
 
 ---
 
+## v4.0.8 — March 2026
+
+✨ **New Features**
+- **Backup & Restore Menu** — Backup Data, Encrypted Backup, and Restore Data are now combined under a single Backup & Restore option in the More tab, keeping the More tab cleaner and easier to navigate
+
+🎨 **UI Fixes**
+- **More Tab Arrow Icons** — Currency Symbol and Privacy Policy buttons were missing the → arrow indicator. All options in the More tab now consistently show arrows where appropriate
+- **Overlay Slide Animation** — opening a category inside the Ledger did not play the slide-up animation since the overlay was already active. The animation now correctly replays every time a new overlay screen is opened
+
+---
+
 ## v4.0.7 — March 2026
 
 🐛 **Bug Fixes**
