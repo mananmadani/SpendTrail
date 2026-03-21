@@ -275,6 +275,7 @@ function closeContextMenu() {
 //  GLOBALS
 // ============================================================
 let currentTab = 'home', currentAddType = 'expense';
+let isNavigatingBack = false; // true while popstate is handled — stops openOverlay from pushing extra history states
 
 
 // ============================================================
@@ -401,7 +402,9 @@ function openOverlay(title, content) {
     overlay.style.animation = '';
     overlay.classList.add('active');
   });
-  history.pushState({ view: 'overlay' }, ''); // enable system back to close overlay
+  if (!isNavigatingBack) {
+    history.pushState({ view: 'overlay' }, ''); // enable system back to close overlay
+  }
 }
 
 function closeOverlay() {
@@ -1277,12 +1280,14 @@ window.addEventListener('popstate', function(event) {
   const overlay = document.getElementById('overlay');
   if (overlay.classList.contains('active')) {
     // Overlay is open — close it (handles category → ledger transition too)
+    // Set flag so openOverlay called inside closeOverlay does NOT push a new state
+    isNavigatingBack = true;
     closeOverlay();
+    isNavigatingBack = false;
   } else {
     const state = event.state;
     if (state && state.view === 'overlay') {
-      // Stale overlay state — overlay is already closed (left over from
-      // animation reset or programmatic close). Skip it by going back again.
+      // Stale overlay state with overlay already closed — skip it
       history.back();
     } else {
       // Navigate to the tab matching the history state we popped to
