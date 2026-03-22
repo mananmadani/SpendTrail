@@ -11,7 +11,6 @@ All notable changes to SpendTrail are documented here.
 
 🎨 **UI Fixes**
 - **More Tab Arrow Icons** — Currency Symbol and Privacy Policy buttons were missing the → arrow indicator. All options in the More tab now consistently show arrows where appropriate
-- **Overlay Slide Animation** — opening a category inside the Ledger did not play the slide-up animation since the overlay was already active. The animation now correctly replays every time a new overlay screen is opened
 
 ---
 
