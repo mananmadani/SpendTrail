@@ -4,6 +4,13 @@ All notable changes to SpendTrail are documented here.
 
 ---
 
+## v4.0.9 — April 2025
+
+✨ **New Features**
+- **Terms of Use** — a comprehensive Terms of Use document is now available under More → Terms of Use. The 17-section document covers acceptance of terms, permitted and prohibited use, open source and intellectual property, data ownership and backup responsibility, disclaimer of warranties, limitation of liability, the not-financial-advice notice, third-party libraries, governing law, severability, and contact information. Styled consistently with the existing Privacy Policy, including a gradient header, emoji section markers, and a green agreement summary card at the bottom
+
+---
+
 ## v4.0.8 — March 2026
 
 ✨ **New Features**
