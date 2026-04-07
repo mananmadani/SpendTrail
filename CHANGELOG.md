@@ -4,6 +4,13 @@ All notable changes to SpendTrail are documented here.
 
 ---
 
+## v4.0.10 — April 2025
+
+🐛 **Bug Fixes**
+- **Overlay Scroll Position Reset** — opening any overlay after previously scrolling inside another would inherit the old scroll position. For example, scrolling partway through the Privacy Policy and then opening the Terms of Use would open the Terms already scrolled down to the same position, and vice versa. This affected every overlay in the app — All Entries, Ledger, Category Details, Analytics, Manage Profiles, Backup & Restore, Currency, Custom Statement, Edit Entry, Terms of Use, and Privacy Policy. The fix moves the `scrollTop = 0` reset to after the overlay becomes visible, so the browser correctly honours the assignment and every overlay always opens at the top
+
+---
+
 ## v4.0.9 — April 2025
 
 ✨ **New Features**
