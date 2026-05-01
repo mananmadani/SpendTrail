@@ -9,9 +9,6 @@ All notable changes to SpendTrail are documented here.
 ✨ **New Features**
 - **About SpendTrail** — a new About screen is now available under More → About SpendTrail. It displays the app logo, name, version number, and last updated date, along with a short description, developer info, and licence. Privacy Policy and Terms of Use are now accessible from here as tappable cards at the bottom of the About screen, and have been removed as standalone items from the More tab
 
-🐛 **Bug Fixes**
-- **Back Navigation from Privacy Policy and Terms of Use** — pressing back while viewing the Privacy Policy or Terms of Use (opened from About) would close the entire overlay and drop the user back to the More tab. Back now correctly returns to the About screen, consistent with the navigation behaviour of other nested overlays in the app
-
 📄 **Content Updates**
 - Privacy Policy and Terms of Use updated to reflect the new navigation path: all references to "More → Privacy Policy" and "More → Terms of Use" now correctly read "More → About → Privacy Policy" and "More → About → Terms of Use" respectively
 
