@@ -4,6 +4,13 @@ All notable changes to SpendTrail are documented here.
 
 ---
 
+## v4.0.12 — May 2026
+
+🎨 **UI Improvements**
+- **PDF Date Now Includes Year** — transaction dates in both Export PDF and Custom Statement PDF now display the full date including year (e.g. 13 May 2026 instead of 13 May), making exported statements unambiguous across years
+
+---
+
 ## v4.0.11 — May 2026
 
 ✨ **New Features**
