@@ -1,4 +1,4 @@
-const CACHE_NAME = 'SpendTrail-v4.0.11';
+const CACHE_NAME = 'SpendTrail-v4.0.12';
 const ASSETS = [
   './',
   './index.html',
