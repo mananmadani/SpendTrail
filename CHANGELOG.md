@@ -4,6 +4,13 @@ All notable changes to SpendTrail are documented here.
 
 ---
 
+## v4.0.13 — May 2026
+
+🔧 **Improvements**
+- **Migrated Storage from localStorage to IndexedDB** — all app data (transactions, profiles, currency settings) is now stored using the browser's IndexedDB instead of localStorage. IndexedDB has no practical storage size restriction, unlike localStorage which is capped at 5–10 MB per origin. Existing data is automatically migrated from localStorage to IndexedDB on first launch with zero data loss. Privacy Policy and Terms of Use updated to reflect the new storage mechanism
+
+---
+
 ## v4.0.12 — May 2026
 
 🎨 **UI Improvements**
