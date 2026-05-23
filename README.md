@@ -50,7 +50,7 @@ SpendTrail is a lightweight, privacy-first expense tracker that runs entirely in
 - 💾 **Backup & Restore** — plain JSON or AES-256 encrypted backups, per profile
 
 ### Technical
-- 🔒 **100% Private** — all data in browser localStorage, nothing leaves your device
+- 🔒 **100% Private** — all data in browser IndexedDB, nothing leaves your device
 - 📶 **Full Offline Support** — service worker caches app on first visit; works without internet
 - 📱 **PWA** — installable as a native app on Android, iOS, and desktop
 - ⚡ **No Dependencies** — vanilla JS, no frameworks, no build tools
@@ -95,7 +95,7 @@ SpendTrail is a lightweight, privacy-first expense tracker that runs entirely in
 |----------|------------|
 | Frontend | Vanilla JavaScript (ES6+) |
 | Styling | Custom CSS3 with Flexbox/Grid |
-| Storage | localStorage API |
+| Storage | IndexedDB API |
 | Offline | Service Workers + Web App Manifest |
 | Charts | Chart.js v4.4.0 |
 | PDF | jsPDF v2.5.1 |
