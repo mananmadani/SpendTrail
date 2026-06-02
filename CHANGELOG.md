@@ -4,6 +4,13 @@ All notable changes to SpendTrail are documented here.
 
 ---
 
+## v4.0.14 — June 2026
+
+🎨 **UI Improvements**
+- **Emoji Icons Replaced with SVG Icons** — all emoji used as UI icons throughout the app have been replaced with clean, stroke-based inline SVG icons (Lucide-style). This affects the bottom navigation bar, home screen summary cards, Insights and More menu options, transaction list icons, context menu buttons, Backup & Restore options, and all section headings inside Terms of Use and Privacy Policy. Icons now render consistently across all devices and browsers without relying on system emoji fonts, and correctly inherit the app's colour theme. A reusable `svgIcon()` helper with a 30-icon library was introduced to power all dynamically generated icons in JavaScript
+
+---
+
 ## v4.0.13 — May 2026
 
 🔧 **Improvements**
@@ -69,7 +76,7 @@ All notable changes to SpendTrail are documented here.
 - **System Navigation Support** — the Android back button, Android swipe-back gesture, iOS swipe-back gesture, and desktop browser back button now all work correctly within the app. Previously pressing back would exit the app or go to a previous website. Now it closes the open overlay first, then navigates back to the Home tab if on another tab, and only exits the app when already on Home with no overlay open
 
 🐛 **Bug Fixes**
-- **Edit Entry Back Navigation Fix** — pressing back while editing a transaction from All Entries would incorrectly close the entire overlay, taking the user out of All Entries. Similarly, editing from a Category Details screen would close the entire Ledger view. Back now correctly returns to All Entries or the specific Category Details screen depending on where the edit was opened from. 
+- **Edit Entry Back Navigation Fix** — pressing back while editing a transaction from All Entries would incorrectly close the entire overlay, taking the user out of All Entries. Similarly, editing from a Category Details screen would close the entire Ledger view. Back now correctly returns to All Entries or the specific Category Details screen depending on where the edit was opened from
 
 ---
 
