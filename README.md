@@ -5,7 +5,7 @@
 
 [![Live Demo](https://img.shields.io/badge/Demo-Live-success)](https://mananmadani.github.io/SpendTrail/)
 [![Downloads](https://hits.sh/github.com/mananmadani/SpendTrail/main.svg?label=downloads&color=7c1&labelColor=555&style=flat)](https://github.com/mananmadani/SpendTrail)
-[![Version](https://img.shields.io/badge/version-4.0.13-blue)]()
+[![Version](https://img.shields.io/badge/version-4.0.14-blue)]()
 [![License](https://img.shields.io/badge/license-MIT-green)]()
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)]()
 
@@ -54,6 +54,7 @@ SpendTrail is a lightweight, privacy-first expense tracker that runs entirely in
 - 📶 **Full Offline Support** — service worker caches app on first visit; works without internet
 - 📱 **PWA** — installable as a native app on Android, iOS, and desktop
 - ⚡ **No Dependencies** — vanilla JS, no frameworks, no build tools
+- 🎨 **SVG Icon System** — fully inline Lucide-style stroke icons, consistent across all platforms
 
 ---
 
@@ -97,6 +98,7 @@ SpendTrail is a lightweight, privacy-first expense tracker that runs entirely in
 | Styling | Custom CSS3 with Flexbox/Grid |
 | Storage | IndexedDB API |
 | Offline | Service Workers + Web App Manifest |
+| Icons | Inline SVG (Lucide-style, no CDN) |
 | Charts | Chart.js v4.4.0 |
 | PDF | jsPDF v2.5.1 |
 | Encryption | CryptoJS v4.1.1 (AES-256) |
@@ -163,7 +165,7 @@ SpendTrail/
 - 🔐 AES-256 encryption available for backup files
 - 📶 Service worker operates fully offline — no background requests
 
-See full details in the app under **More → Privacy Policy**.
+See full details in the app under **More → About SpendTrail → Privacy Policy**.
 
 ---
 
