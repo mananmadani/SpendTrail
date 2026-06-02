@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SpendTrail</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <img src="SpendTrail.png" alt="SpendTrail Logo" class="logo">
+    <div class="header-title-group">
+      <span class="app-title">SpendTrail</span>
+      <span class="header-profile-name" id="active-profile-name"></span>
+    </div>
+  </header>
+
+  <!-- Main Content Area -->
+  <main id="main-content">
+
+    <!-- HOME TAB -->
+    <div id="tab-home" class="tab-content active">
+      <div class="balance-card">
+        <div class="balance-label">Current Balance</div>
+        <div class="balance-amount" id="balance">₹0.00</div>
+        <div class="balance-trend" id="balance-trend">Track your finances</div>
+      </div>
+      <div class="summary-grid">
+        <div class="summary-card income-card">
+          <div class="summary-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div>
+          <div class="summary-details">
+            <div class="summary-label">Income</div>
+            <div class="summary-value" id="total-income">₹0.00</div>
+          </div>
+        </div>
+        <div class="summary-card expense-card">
+          <div class="summary-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 18 13.5 8.5 8.5 13.5 1 6"/><polyline points="17 18 23 18 23 12"/></svg></div>
+          <div class="summary-details">
+            <div class="summary-label">Expense</div>
+            <div class="summary-value" id="total-expense">₹0.00</div>
+          </div>
+        </div>
+      </div>
+      <div class="section-header">Recent Transactions</div>
+      <div id="recent-list" class="transaction-list"></div>
+      <div class="empty-state" id="empty-recent" style="display:none;">
+        <div class="empty-icon"><svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div>
+        <div class="empty-text">No transactions yet</div>
+        <div class="empty-subtext">Start tracking your finances</div>
+      </div>
+    </div>
+
+    <!-- ADD TAB -->
+    <div id="tab-add" class="tab-content">
+      <div class="add-tab-toggle">
+        <button class="toggle-btn active" data-type="expense" onclick="switchAddType('expense')">Expense</button>
+        <button class="toggle-btn" data-type="income" onclick="switchAddType('income')">Income</button>
+      </div>
+      <form id="add-form" class="add-form">
+        <div class="form-group">
+          <label>Amount</label>
+          <input type="number" id="add-amount" placeholder="0.00" step="0.01" min="0.01" required>
+        </div>
+        <div class="form-group">
+          <label>Category</label>
+          <input type="text" id="add-category" placeholder="e.g. Food, Salary" required list="category-list" autocomplete="off">
+          <datalist id="category-list"></datalist>
+        </div>
+        <div class="form-group">
+          <label>Date</label>
+          <input type="date" id="add-date" required>
+        </div>
+        <div class="form-group">
+          <label>Note (Optional)</label>
+          <input type="text" id="add-note" placeholder="Add a note" autocomplete="off">
+        </div>
+        <button type="submit" class="submit-btn" id="submit-btn">Add Expense</button>
+      </form>
+    </div>
+
+    <!-- INSIGHTS TAB -->
+    <div id="tab-insights" class="tab-content">
+      <div class="insights-menu">
+        <button class="insight-option" onclick="showAnalytics()">
+          <span class="option-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#667EEA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></span>
+          <span class="option-text">Analytics</span>
+          <span class="option-arrow">→</span>
+        </button>
+        <button class="insight-option" onclick="showAllEntries()">
+          <span class="option-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#667EEA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg></span>
+          <span class="option-text">All Entries</span>
+          <span class="option-arrow">→</span>
+        </button>
+        <button class="insight-option" onclick="showLedger()">
+          <span class="option-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#667EEA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg></span>
+          <span class="option-text">Ledger</span>
+          <span class="option-arrow">→</span>
+        </button>
+        <button class="insight-option" onclick="showStatements()">
+          <span class="option-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#667EEA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></span>
+          <span class="option-text">Custom Statement</span>
+          <span class="option-arrow">→</span>
+        </button>
+        <button class="insight-option" onclick="exportPDF()">
+          <span class="option-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#667EEA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></span>
+          <span class="option-text">Export PDF</span>
+          <span class="option-arrow">→</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- MORE TAB -->
+    <div id="tab-more" class="tab-content">
+      <div class="more-menu">
+
+        <button class="more-option" onclick="showManageProfiles()">
+          <span class="option-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#667EEA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span>
+          <span class="option-text">Manage Profiles</span>
+          <span class="option-arrow">→</span>
+        </button>
+        <button class="more-option" onclick="showBackupRestore()">
+          <span class="option-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#667EEA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="12" x2="2" y2="12"/><path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"/><line x1="6" y1="16" x2="6.01" y2="16"/><line x1="10" y1="16" x2="10.01" y2="16"/></svg></span>
+          <span class="option-text">Backup &amp; Restore</span>
+          <span class="option-arrow">→</span>
+        </button>
+        <button class="more-option danger" onclick="deleteAllData()">
+          <span class="option-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F44336" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2"/><line x1="10" y1="11" x2="10" y2="17"/><line x1="14" y1="11" x2="14" y2="17"/></svg></span>
+          <span class="option-text">Delete All Data</span>
+          <span class="option-arrow">→</span>
+        </button>
+        <button class="more-option" onclick="showCurrencySettings()">
+          <span class="option-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#667EEA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></span>
+          <span class="option-text">Currency Symbol</span>
+          <span class="option-arrow">→</span>
+        </button>
+
+        <div class="more-divider"></div>
+
+        <button class="more-option" onclick="showAbout()">
+          <span class="option-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#667EEA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></span>
+          <span class="option-text">About SpendTrail</span>
+          <span class="option-arrow">→</span>
+        </button>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Bottom Navigation -->
+  <nav class="bottom-nav">
+    <button class="nav-btn active" data-tab="home" onclick="switchTab('home')">
+      <span class="nav-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></span>
+      <span class="nav-label">Home</span>
+    </button>
+    <button class="nav-btn" data-tab="add" onclick="switchTab('add')">
+      <span class="nav-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+      <span class="nav-label">Add</span>
+    </button>
+    <button class="nav-btn" data-tab="insights" onclick="switchTab('insights')">
+      <span class="nav-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18v5"/><path d="M8 14v9"/><path d="M12 16v7"/><path d="M16 14v9"/><path d="M20 10v13"/><path d="m22 3-8.646 8.646a.5.5 0 0 1-.708 0L9.354 8.354a.5.5 0 0 1-.707 0L2 15"/></svg></span>
+      <span class="nav-label">Insights</span>
+    </button>
+    <button class="nav-btn" data-tab="more" onclick="switchTab('more')">
+      <span class="nav-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="21" x2="4" y2="14"/><line x1="4" y1="10" x2="4" y2="3"/><line x1="12" y1="21" x2="12" y2="12"/><line x1="12" y1="8" x2="12" y2="3"/><line x1="20" y1="21" x2="20" y2="16"/><line x1="20" y1="12" x2="20" y2="3"/><line x1="1" y1="14" x2="7" y2="14"/><line x1="9" y1="8" x2="15" y2="8"/><line x1="17" y1="16" x2="23" y2="16"/></svg></span>
+      <span class="nav-label">More</span>
+    </button>
+  </nav>
+
+  <!-- Fullscreen Overlay -->
+  <div id="overlay" class="overlay">
+    <div class="overlay-header">
+      <button class="back-btn" onclick="history.back()">← Back</button>
+      <h2 id="overlay-title">Title</h2>
+    </div>
+    <div id="overlay-content" class="overlay-content"></div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <script src="app.js"></script>
+
+  <!-- Service Worker Registration -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('./service-worker.js')
+          .then(function (reg) {
+            console.log('SpendTrail SW registered:', reg.scope);
+          })
+          .catch(function (err) {
+            console.warn('SpendTrail SW registration failed:', err);
+          });
+      });
+    }
+  </script>
+</body>
+</html>
