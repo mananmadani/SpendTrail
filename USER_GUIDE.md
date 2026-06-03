@@ -79,8 +79,8 @@ A complete guide to using every feature in SpendTrail.
 
 1. **Long press** (or click and hold) any transaction in All Entries, Ledger, or Category Details
 2. A context menu slides up with three options:
-   - ✏️ **Edit** — modify amount, category, date, or note
-   - 🗑️ **Delete** — permanently remove the transaction
+   - **Edit** — modify amount, category, date, or note
+   - **Delete** — permanently remove the transaction
    - **Cancel** — dismiss the menu
 
 > After editing, the view refreshes automatically and returns you to where you were.
@@ -93,9 +93,9 @@ A complete guide to using every feature in SpendTrail.
 2. Select a time period: **Week** (7 days) / **Month** (30 days) / **3 Months** (90 days)
 3. Toggle between **Expense** and **Income** analytics
 4. Three chart views are available:
-   - 🥧 **Pie Chart** — top 5 categories with percentages; tap "View Others Breakdown" to see remaining categories
-   - 📊 **Bar Chart** — all categories sorted by amount with visual progress bars
-   - 📈 **Trend Chart** — daily income vs expense over the selected period
+   - **Pie Chart** — top 5 categories with percentages; tap "View Others Breakdown" to see remaining categories
+   - **Bar Chart** — all categories sorted by amount with visual progress bars
+   - **Trend Chart** — daily income vs expense over the selected period
 
 ---
 
