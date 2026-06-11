@@ -4,6 +4,13 @@ All notable changes to SpendTrail are documented here.
 
 ---
 
+## v4.0.15 — June 2026
+
+🎨 **UI Improvements**
+- **Currency Picker Redesigned** — the currency selection screen has been replaced with a clean, full-width card list consistent with the rest of the app's UI. Each row shows the currency symbol in a rounded badge, the full currency name (e.g. Indian Rupee, US Dollar), and the short code below it. The currently active currency is highlighted with a purple border and a checkmark on the right. Tapping a currency saves it instantly with no Save button required — the checkmark moves to the selected row in place and a confirmation toast appears. A haptic pulse (20 ms vibration) fires on selection, matching the feedback pattern used elsewhere in the app
+
+---
+
 ## v4.0.14 — June 2026
 
 🎨 **UI Improvements**
