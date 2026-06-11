@@ -38,8 +38,8 @@ A complete guide to using every feature in SpendTrail.
 ## 💱 Setting Your Currency
 
 1. Go to **More → Currency Symbol**
-2. Select your preferred currency from the dropdown (30 options available)
-3. Tap **Save Currency**
+2. Scroll through the list of 30 currencies — each row shows the symbol, full currency name, and short code
+3. Tap your preferred currency — it is saved instantly and the row highlights with a checkmark
 
 > Currency settings are saved per profile. Each profile can have a different currency symbol.  
 > Currency selection changes the display symbol only — no conversion calculations are performed.
