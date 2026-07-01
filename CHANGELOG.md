@@ -4,6 +4,13 @@ All notable changes to SpendTrail are documented here.
 
 ---
 
+## v4.0.16 — July 2026
+
+🔒 **Security & UX**
+- **Type-to-Confirm Deletion** — deleting a profile or clearing all data in a profile no longer uses browser `confirm()` dialogs. Instead, a purpose-built overlay requires the user to type the exact profile name before the delete button activates. The button stays disabled and greyed out until the name matches precisely, preventing accidental deletion. Real-time feedback guides the user as they type: a yellow border and "Keep typing…" hint while still on track, a green border and "Name matches" confirmation when correct, and a red border with "That's not right — check the name and try again" if a wrong character is entered. Applies to both Delete Profile and Delete All Data
+
+---
+
 ## v4.0.15 — June 2026
 
 🎨 **UI Improvements**
