@@ -28,7 +28,7 @@ A complete guide to using every feature in SpendTrail.
 3. **Switch profile** — tap any inactive profile card to switch to it
 4. **Create profile** — tap **＋ New Profile**, enter a name (max 20 characters, up to 5 profiles total)
 5. **Rename profile** — tap **Rename** on any profile card
-6. **Delete profile** — tap **Delete** on any profile to permanently remove it and all its data
+6. **Delete profile** — tap **Delete** on any profile card, then type the profile name exactly when prompted to confirm. The delete button activates only when the name matches
 
 > The active profile name is always visible next to the SpendTrail logo in the header.  
 > Each profile maintains completely separate transactions, categories, currency, and settings.
@@ -167,9 +167,13 @@ All backup and restore options are available under **More → Backup & Restore**
 ## 🗑️ Deleting All Data
 
 1. Go to **More → Delete All Data**
-2. Confirm twice when prompted
-3. All transactions in the **active profile only** are permanently deleted
-4. Other profiles are completely unaffected
+2. An overlay appears explaining what will be deleted
+3. Type the **exact profile name** into the confirmation field
+4. The **Delete All Data** button activates only when the name matches precisely — tap it to confirm
+5. All transactions in the **active profile only** are permanently deleted
+6. Other profiles are completely unaffected
+
+> As you type, the field gives live feedback — yellow while still on track, green when the name matches, and red if a wrong character is entered.
 
 > To delete an entire profile and all its data, use **More → Manage Profiles → Delete**.
 
