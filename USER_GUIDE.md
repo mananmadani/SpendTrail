@@ -8,16 +8,17 @@ A complete guide to using every feature in SpendTrail.
 
 1. [Managing Profiles](#-managing-profiles)
 2. [Setting Your Currency](#-setting-your-currency)
-3. [Adding Transactions](#-adding-transactions)
-4. [Viewing & Searching Transactions](#-viewing--searching-transactions)
-5. [Editing & Deleting Transactions](#-editing--deleting-transactions)
-6. [Analytics](#-analytics)
-7. [Ledger](#-ledger)
-8. [Custom Statements](#-custom-statements)
-9. [Exporting PDF Reports](#-exporting-pdf-reports)
-10. [Backup & Restore](#-backup--restore)
-11. [Deleting All Data](#-deleting-all-data)
-12. [PDF Report Details](#-pdf-report-details)
+3. [Dark Mode](#-dark-mode)
+4. [Adding Transactions](#-adding-transactions)
+5. [Viewing & Searching Transactions](#-viewing--searching-transactions)
+6. [Editing & Deleting Transactions](#-editing--deleting-transactions)
+7. [Analytics](#-analytics)
+8. [Ledger](#-ledger)
+9. [Custom Statements](#-custom-statements)
+10. [Exporting PDF Reports](#-exporting-pdf-reports)
+11. [Backup & Restore](#-backup--restore)
+12. [Deleting All Data](#-deleting-all-data)
+13. [PDF Report Details](#-pdf-report-details)
 
 ---
 
@@ -32,6 +33,16 @@ A complete guide to using every feature in SpendTrail.
 
 > The active profile name is always visible next to the SpendTrail logo in the header.  
 > Each profile maintains completely separate transactions, categories, currency, and settings.
+
+---
+
+## 🌙 Dark Mode
+
+1. Go to **More → Appearance**
+2. Choose **Light** or **Dark**
+3. The change applies instantly and is remembered on your device
+
+> Exported PDFs always use the standard light layout, regardless of theme.
 
 ---
 
