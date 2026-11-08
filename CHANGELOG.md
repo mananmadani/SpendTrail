@@ -4,6 +4,17 @@ All notable changes to SpendTrail are documented here.
 
 ---
 
+## v4.0.17 — November 2026
+
+✨ **New Features**
+- **Dark Mode** — SpendTrail now has a full dark theme. A new **More → Appearance** screen lets you switch between *Light* (default) and *Dark*. The choice is saved on your device and applied before the first paint, so the app never flashes white on launch. Every screen is covered — Home, Add, Insights, More, all overlays, context menus, forms, delete-confirmation dialogs, the About / Terms / Privacy pages and the toast notifications. Analytics charts (doughnut and trend) also adapt their text and grid colours, and the browser/status bar colour follows the theme. Brand colours, income (green) and expense (red) accents are unchanged, with brighter tints used in dark mode for readable contrast
+- Under the hood, all colours are now CSS custom properties (`:root` / `[data-theme="dark"]`), so future themes only need a new variable set. Exported PDFs are unaffected and always use the light layout
+
+🎨 **UI Improvements**
+- **Analytics Chart Legends Refined** — the doughnut chart legend now uses the app's own font and theme-aware text colour instead of Chart.js's default black text, and the wide outlined colour boxes were replaced with small round markers that match each slice. The 30-day trend chart legend uses the same round markers, and chart text colours adapt to Light and Dark themes
+
+---
+
 ## v4.0.16 — July 2026
 
 🔒 **Security & UX**
